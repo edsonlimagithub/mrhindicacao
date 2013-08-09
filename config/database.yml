@@ -1,0 +1,18 @@
+
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: mrhindicacao_development
+  pool: 5
+  username: mrhindicacao
+  password: mrhindicacao
+  
+production:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: mrhindicacao_production
+  pool: 5
+  username: mrhindicacao
+  password: mrhindicacao

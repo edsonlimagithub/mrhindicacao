@@ -1,10 +1,22 @@
-<h2>Sign up</h2>
+<h2>Novo Usuário</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
+  <div><%= f.label :nome %><br />
+  <%= f.text_field :nome %></div>
+
+  <div><%= f.label :telefone %><br />
+  <%= f.text_field :telefone %></div>
+
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
+
+  <div><%= f.label :setor %><br />
+  <%= f.select :setor_id, Setor.all.collect{|s| [s.id, s.descricao]} %></div>
+
+  <div><%= f.label :papel %><br />
+  <%= f.select :role_id, Role.all.collect{|r| [r.id, r.descricao]} %></div>
 
   <div><%= f.label :password %><br />
   <%= f.password_field :password %></div>
@@ -12,7 +24,7 @@
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.submit "Sign up" %></div>
+  <div><%= f.submit "Confirmar" %></div>
 <% end %>
 
 <%= render "devise/shared/links" %>

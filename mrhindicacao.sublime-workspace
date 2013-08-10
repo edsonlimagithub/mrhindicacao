@@ -234,6 +234,33 @@
 				"buffer_size": 174,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/views/devise/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "class UserController < ApplicationController\n	def new\n		@User.new\n	end\nend\n",
+			"file": "app/controllers/user_controller.rb",
+			"file_size": 75,
+			"file_write_time": 1376054556000000,
+			"settings":
+			{
+				"buffer_size": 75,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
@@ -308,6 +335,8 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/users_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/user_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/routes.rb",
 		"/home/edsonlima/projetos/mrhindicacao/public/_index.html",
@@ -433,9 +462,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/views/questionarios/editar_questoes.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/questaos/editar_opcoes.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130301121510_add_questao_opcao_id_to_opcao_questao_textos.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/mobile/libera_questionario.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/mobile_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/produto_pedido.rb"
+		"/home/edsonlima/projetos/dsmmanager/app/views/mobile/libera_questionario.html.erb"
 	],
 	"find":
 	{
@@ -527,7 +554,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -663,6 +690,84 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/devise/sessions/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/user_controller.rb",
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -713,6 +818,10 @@
 		"selected_items":
 		[
 			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
 				"index",
 				"app/views/application/index.html.erb"
 			],
@@ -727,10 +836,6 @@
 			[
 				"app",
 				"app/controllers/application_controller.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			],
 			[
 				"confi",

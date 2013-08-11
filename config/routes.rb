@@ -1,5 +1,7 @@
 Mrhindicacao::Application.routes.draw do
   
+  get "user/index"
+
   resources :roles
 
   resources :setors
@@ -9,6 +11,8 @@ Mrhindicacao::Application.routes.draw do
   resources :user
 
   root :to => 'application#index'
+
+  match "/user/criar_novo" => "user#criar_novo"
 
   
 end

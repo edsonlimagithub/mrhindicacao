@@ -1,0 +1,29 @@
+<h3>Usuários</h3>
+<table>
+<thead>
+	<tr>
+		<th>Nome</th>
+		<th>Email</th>
+		<th>Setor</th>
+		<th>Papel</th>
+		<th>Ações</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+</thead>
+<tbody>
+	<% @users.each do |user| %>
+		<tr>
+			<td><%= user.nome %></td>
+			<td><%= user.email %></td>
+			<td><%= !user.setor.nil? ? user.setor.descricao : '' %></td>
+			<td><%= !user.role.nil? ? user.role.descricao : ''   %></td>
+			<td><%= link_to 'Show', user %></td>
+    		<td><%= link_to 'Edit', edit_user_path(user) %></td>
+    		<td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %></td>
+		</tr>
+	<% end %>
+</tbody>
+</table>
+

@@ -1,0 +1,27 @@
+<h2>Novo Usuário</h2>
+
+<%= form_tag "/user/criar_novo" do %>
+
+  <div>Nome<br />
+  <%= text_field_tag 'user[nome]' %></div>
+
+  <div>Telefone<br />
+  <%= text_field_tag 'user[telefone]' %></div>
+
+  <div>Email<br />
+  <%= email_field_tag 'user[email]' %></div>
+
+  <div>Setor<br />
+  <%= select_tag 'user[setor_id]', options_from_collection_for_select(Setor.all, "id", "descricao") %></div>
+
+  <div>Papel<br />
+  <%= select_tag 'user[role_id]', options_from_collection_for_select(Role.all, "id", "descricao") %></div>
+
+  <div>Senha<br />
+  <%= password_field_tag 'user[password]' %></div>
+
+  <div>Confirme a senha<br />
+  <%= password_field_tag 'user[password_confirmation]' %></div>
+
+  <div><%= submit_tag "Confirmar" %></div>
+<% end %>

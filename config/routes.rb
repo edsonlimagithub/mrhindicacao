@@ -1,5 +1,11 @@
 Mrhindicacao::Application.routes.draw do
   
+  resources :indicacaos
+
+  resources :servicos
+
+  resources :clientes
+
   get "user/index"
 
   resources :roles
@@ -13,6 +19,10 @@ Mrhindicacao::Application.routes.draw do
   root :to => 'application#index'
 
   match "/user/criar_novo" => "user#criar_novo"
+  #direciona para lista de clientes modal
+  match "/cliente/index_modal" =>  "clientes#index_modal"
+  #direciona para new cliente modal
+  match "/cliente/new_modal" => "clientes#new_modal"
 
   
 end

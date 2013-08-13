@@ -1,0 +1,28 @@
+<table>
+  <tbody>
+  <tr>
+    <th>Nome</th>
+    <th>Contato</th>
+    <th>Telefone</th>
+    <th>Email</th>
+    <th>inserir</th>
+  </tr>
+
+<% @clientes.each do |cliente| %>
+  <tr>
+    <td><%= cliente.nome %></td>
+    <td><%= cliente.contato %></td>
+    <td><%= cliente.telefone %></td>
+    <td><%= cliente.email %></td>
+    <td><%= link_to 'selecionar', :click => "selecionar_cliente(#{cliente.id})"%></td>
+  </tr>
+<% end %>
+</table>
+<script type="text/javascript">
+var selectionar_cliente = function(cliente_id){
+  alert(cliente_id)
+}
+</script>
+
+
+

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Data:</b>
+  <%= @indicacao.data %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @indicacao.usuario_id %>
+</p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @indicacao.cliente_id %>
+</p>
+
+<p>
+  <b>Servico:</b>
+  <%= @indicacao.servico_id %>
+</p>
+
+<p>
+  <b>Detalhes:</b>
+  <%= @indicacao.detalhes %>
+</p>
+
+
+<%= link_to 'Edit', edit_indicacao_path(@indicacao) %> |
+<%= link_to 'Back', indicacaos_path %>

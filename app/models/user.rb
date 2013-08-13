@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   belongs_to :setor
   belongs_to :role
+  has_many :indicacaos
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable

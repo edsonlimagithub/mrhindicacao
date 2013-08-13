@@ -1,4 +1,5 @@
 class SetorsController < ApplicationController
+load_and_authorize_resource
   # GET /setors
   # GET /setors.json
   def index

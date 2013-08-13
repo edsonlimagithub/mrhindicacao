@@ -196,50 +196,69 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 813,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/database.yml",
-			"settings":
-			{
-				"buffer_size": 342,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/layouts/_navigation.html.erb",
 			"settings":
 			{
-				"buffer_size": 515,
+				"buffer_size": 1061,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/_messages.html.erb",
+			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 282,
+				"buffer_size": 1073,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/application/index.html.erb",
+			"file": "app/controllers/user_controller.rb",
 			"settings":
 			{
-				"buffer_size": 174,
+				"buffer_size": 219,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/devise/sessions/new.html.erb",
+			"file": "app/controllers/application_controller.rb",
 			"settings":
 			{
-				"buffer_size": 352,
+				"buffer_size": 306,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "class Ability\n  include CanCan::Ability\n\n  def initialize(user)\n    \n    if user.role.descricao = 'administrador'\n        can :manage, :all\n    end\n        \n  end\nend\n",
+			"file": "app/models/ability.rb",
+			"file_size": 1116,
+			"file_write_time": 1376250962000000,
+			"settings":
+			{
+				"buffer_size": 167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/roles/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 502,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/roles_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/setors_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1899,
 				"line_ending": "Unix"
 			}
 		},
@@ -247,18 +266,7 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 126,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "class UserController < ApplicationController\n	def new\n		@User.new\n	end\nend\n",
-			"file": "app/controllers/user_controller.rb",
-			"file_size": 75,
-			"file_write_time": 1376054556000000,
-			"settings":
-			{
-				"buffer_size": 75,
+				"buffer_size": 236,
 				"line_ending": "Unix"
 			}
 		}
@@ -335,18 +343,34 @@
 	},
 	"file_history":
 	[
-		"/home/edsonlima/projetos/mrhindicacao/app/controllers/users_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/controllers/user_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/routes.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/devise/sessions/new.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/roles/new.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/roles/index.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/user/index.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/Gemfile",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/user/new.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/user.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/roles/_form.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/devise/registrations/new.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/devise/shared/_links.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/devise/passwords/edit.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/ability.rb",
+		"/home/edsonlima/projetos/mrhindicacao/db/seeds.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/role.rb",
+		"/home/edsonlima/projetos/mrhindicacao/config/database.yml",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/setor.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/_messages.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/user_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/application/index.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130810104013_add_coluns_in_user.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/users_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/public/_index.html",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/stylesheets/application.css",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/stylesheets/bootstrap_and_overrides.css.scss",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/javascripts/application.js",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/application_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/db/seeds.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/user.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/application/index.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/public/index.html",
 		"/home/edsonlima/projetos/dsmmanager/app/controllers/ativacaos_controller.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/auditar_linhas_processar.html.erb",
@@ -446,23 +470,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/models/questao.rb",
 		"/home/edsonlima/projetos/dsmmanager/lib/convert_value.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/produto_pedidos/PlanilhaPedidoCreate.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/produto_pedidos/edit.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/produto_pedidos/index.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/lib/produto_pedido_module.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/produto_pedidos/new.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/lib/date_operations.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/produtos_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/lib/funcoes_string/convert_value.rb",
-		"/home/edsonlima/projetos/dsmmanager/lib/funcoes_string/extend_string.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/helpers/analise_auditorias_helper.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/helpers/analise_statuses_helper.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/helpers/ativacaos_helper.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/produto_pedidos/show.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/aparelho_caracteristicas/edit.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/questionarios/editar_questoes.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/questaos/editar_opcoes.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130301121510_add_questao_opcao_id_to_opcao_questao_textos.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/mobile/libera_questionario.html.erb"
+		"/home/edsonlima/projetos/dsmmanager/app/views/produto_pedidos/edit.html.erb"
 	],
 	"find":
 	{
@@ -554,77 +562,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 813,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								95,
-								95
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config/database.yml",
-					"settings":
-					{
-						"buffer_size": 342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								203
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/views/layouts/_navigation.html.erb",
 					"settings":
 					{
-						"buffer_size": 515,
+						"buffer_size": 1061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								515,
-								515
+								354,
+								354
 							]
 						],
 						"settings":
@@ -640,97 +594,75 @@
 					"type": "text"
 				},
 				{
+					"buffer": 1,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 1073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/user_controller.rb",
+					"settings":
+					{
+						"buffer_size": 219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
 					"buffer": 3,
-					"file": "app/views/layouts/_messages.html.erb",
+					"file": "app/controllers/application_controller.rb",
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								282,
-								282
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/application/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 174,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								174,
-								174
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/devise/sessions/new.html.erb",
-					"settings":
-					{
-						"buffer_size": 352,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								265,
-								265
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
+								0,
+								0
 							]
 						],
 						"settings":
@@ -744,19 +676,131 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/controllers/user_controller.rb",
+					"buffer": 4,
+					"file": "app/models/ability.rb",
 					"settings":
 					{
-						"buffer_size": 75,
+						"buffer_size": 167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10,
-								10
+								0,
+								167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/roles/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/roles_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/setors_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
 							]
 						],
 						"settings":
@@ -818,32 +862,96 @@
 		"selected_items":
 		[
 			[
-				"routes",
+				"ro",
 				"config/routes.rb"
 			],
 			[
-				"index",
-				"app/views/application/index.html.erb"
+				"setr",
+				"app/controllers/setors_controller.rb"
 			],
 			[
 				"user",
-				"app/models/user.rb"
+				"app/controllers/user_controller.rb"
 			],
 			[
-				"seed",
-				"db/seeds.rb"
+				"rol",
+				"app/controllers/roles_controller.rb"
+			],
+			[
+				"devise",
+				"app/views/devise/sessions/new.html.erb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"_form",
+				"app/views/roles/_form.html.erb"
+			],
+			[
+				"abili",
+				"app/models/ability.rb"
 			],
 			[
 				"app",
 				"app/controllers/application_controller.rb"
 			],
 			[
-				"confi",
-				"config/database.yml"
+				"new",
+				"app/views/roles/new.html.erb"
+			],
+			[
+				"index",
+				"app/views/roles/index.html.erb"
+			],
+			[
+				"li",
+				"app/views/devise/shared/_links.erb"
+			],
+			[
+				"sign",
+				"app/views/devise/registrations/new.html.erb"
+			],
+			[
+				"ind",
+				"app/views/roles/index.html.erb"
+			],
+			[
+				"se",
+				"db/seeds.rb"
+			],
+			[
+				"role",
+				"app/models/role.rb"
+			],
+			[
+				"setor",
+				"app/models/setor.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"edi",
+				"app/views/devise/passwords/edit.html.erb"
 			],
 			[
 				"gem",
 				"Gemfile"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"confi",
+				"config/database.yml"
 			],
 			[
 				"login",
@@ -920,10 +1028,6 @@
 			[
 				"auditori",
 				"app/models/auditoria.rb"
-			],
-			[
-				"route",
-				"config/routes.rb"
 			],
 			[
 				"status",
@@ -1268,66 +1372,6 @@
 			[
 				"pdf",
 				"app/helpers/pdf_pedidos_helper.rb"
-			],
-			[
-				"atualiza",
-				"app/controllers/atualizacao_aspixes_controller.rb"
-			],
-			[
-				"addcolumnaten",
-				"db/migrate/20130502145007_add_column_atendido_to_produt_pedido_item.rb"
-			],
-			[
-				"produto",
-				"app/controllers/produto_pedidos_controller.rb"
-			],
-			[
-				"conve",
-				"lib/funcoes_data/date_convert.rb"
-			],
-			[
-				"new",
-				"app/views/produto_pedidos/new.html.erb"
-			],
-			[
-				"produt",
-				"app/models/produto_pedido.rb"
-			],
-			[
-				"produto_pedidos",
-				"app/views/produto_pedidos/new.html.erb"
-			],
-			[
-				"view/pef",
-				"app/views/perfil_funcionalidades/new.html.erb"
-			],
-			[
-				"pdf_pedidos/",
-				"app/views/pdf_pedidos/show.html.erb"
-			],
-			[
-				"layout/pdf",
-				"app/views/layouts/pdf_pedidos.html.erb"
-			],
-			[
-				"atuali",
-				"app/controllers/atualizacao_aspixes_controller.rb"
-			],
-			[
-				"envi",
-				"config/environment.rb"
-			],
-			[
-				"see",
-				"db/seeds.rb"
-			],
-			[
-				"addattacha",
-				"db/migrate/20130221194036_add_attachments_imagem_to_painel.rb"
-			],
-			[
-				"rename",
-				"db/migrate/20120926141420_rename_colums.rb"
 			]
 		],
 		"width": 0.0

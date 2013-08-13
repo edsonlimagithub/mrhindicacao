@@ -1,0 +1,31 @@
+<h1>Listing indicacaos</h1>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Usuario</th>
+    <th>Cliente</th>
+    <th>Servico</th>
+    <th>Detalhes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @indicacaos.each do |indicacao| %>
+  <tr>
+    <td><%= indicacao.data %></td>
+    <td><%= indicacao.usuario_id %></td>
+    <td><%= indicacao.cliente_id %></td>
+    <td><%= indicacao.servico_id %></td>
+    <td><%= indicacao.detalhes %></td>
+    <td><%= link_to 'Show', indicacao %></td>
+    <td><%= link_to 'Edit', edit_indicacao_path(indicacao) %></td>
+    <td><%= link_to 'Destroy', indicacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Indicacao', new_indicacao_path %>

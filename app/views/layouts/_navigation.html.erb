@@ -8,8 +8,14 @@
     <li class='dropdown'><%= link_to 'Usuario', "/user", :html => "role='menuitem'"  %></li>
     <li class='dropdown'><%= link_to 'Setor', "/setors", :html => "role='menuitem'"  %></li>
     <li class='dropdown'><%= link_to 'Papel', "/roles", :html => "role='menuitem'"  %></li>
+    <li class='dropdown'><%= link_to 'Cliente', "/clientes", :html => "role='menuitem'"  %></li>
+    <li class='dropdown'><%= link_to 'Servico', "/servicos", :html => "role='menuitem'"  %></li>
   </ul>
 </div>
+<a data-toggle="dropdown" href="#" class='brand'>Indicações<span class="caret"></span></a>
+<ul class="dropdown-menu" arial-labelledby="dLabel" role='menu'>
+    <li class='dropdown'><%= link_to 'Nova', "/indicacaos/new", :html => "role='menuitem'"  %></li>
+</ul>
 
 <ul class="nav">
   <% if user_signed_in? %>

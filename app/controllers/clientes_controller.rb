@@ -31,8 +31,20 @@ class ClientesController < ApplicationController
     end
   end
 
-  def new_modal
+  def novo_modal
     @cliente = Cliente.new
+    render layout: false
+  end
+
+  def create_modal
+    cliente = Cliente.new(:nome => params[:nome],
+     :contato => params[:contato], 
+     :telefone => params[:telefone],
+     :email => params[:email],
+     :observacao => params[:observacao])
+    cliente.save
+    render json: cliente
+
   end
 
   # GET /clientes/1/edit

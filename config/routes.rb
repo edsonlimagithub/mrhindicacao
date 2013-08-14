@@ -22,7 +22,9 @@ Mrhindicacao::Application.routes.draw do
   #direciona para lista de clientes modal
   match "/cliente/index_modal" =>  "clientes#index_modal"
   #direciona para new cliente modal
-  match "/cliente/new_modal" => "clientes#new_modal"
+  match "/cliente/novo_modal" => "clientes#novo_modal"
+  #cria novo cliente pela janela modal
+  match "/cliente/create_modal" => "clientes#create_modal"
 
   
 end

@@ -1,0 +1,57 @@
+<%= form_tag "/cliente/create_modal", :method => 'post' do %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% @cliente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<table>
+  <tr>
+    <td><%= label_tag :nome %></td>
+    <td><%= text_field_tag :nome %></td>
+  </tr>
+  <tr>
+    <td><%= label_tag :contato %></td>
+    <td><%= text_field_tag :contato %></td>
+  </tr>
+  <tr>
+    <td><%= label_tag :telefone %></td>
+    <td><%= text_field_tag :telefone %></td>
+  </tr>
+  <tr>
+    <td><%= label_tag :email %></td>
+    <td><%= text_field_tag :email %></td>
+  </tr>
+  <tr>
+    <td><%= label_tag :observacao %></td>
+    <td><%= text_area_tag :observacao %></td>
+  </tr>
+  <tr>
+  <div class="actions">
+    <td><input type="button" value='Cadastrar' onclick="cadastrar()" %></td>
+  </div>
+</tr>
+<% end %>
+<script type="text/javascript">
+  var cadastrar = function(){
+    var nome = $("#nome").val();
+    var contato = $("#contato").val();
+    var telefone = $("#telefone").val();
+    var email = $("#email").val();
+    var observacao = $("observacao").val();
+    $.post(
+      "/cliente/create_modal",
+      {nome:nome, contato:contato, telefone:telefone, email:email, observacao:observacao},
+      function(retorno){
+        $("#indicacao_cliente_id").val(retorno.id);
+        $("#cliente_nome").val(retorno.nome);
+        $('#modalNovo').modal('hide')
+      }
+      )
+  }
+</script>

@@ -298,6 +298,14 @@
 				"buffer_size": 1202,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "config/environments/production.rb",
+			"settings":
+			{
+				"buffer_size": 2485,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
@@ -634,8 +642,8 @@
 						"selection":
 						[
 							[
-								496,
-								496
+								381,
+								381
 							]
 						],
 						"settings":
@@ -912,8 +920,8 @@
 						"selection":
 						[
 							[
-								62,
-								62
+								1202,
+								1202
 							]
 						],
 						"settings":
@@ -922,6 +930,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "config/environments/production.rb",
+					"settings":
+					{
+						"buffer_size": 2485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								645,
+								645
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -977,6 +1013,14 @@
 			[
 				"deploy",
 				"config/deploy.rb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"produ",
+				"config/environments/production.rb"
 			],
 			[
 				"gem",
@@ -1057,10 +1101,6 @@
 			[
 				"abili",
 				"app/models/ability.rb"
-			],
-			[
-				"app",
-				"app/controllers/application_controller.rb"
 			],
 			[
 				"new",
@@ -1481,10 +1521,6 @@
 			[
 				"edit",
 				"app/views/aparelho_caracteristicas/edit.html.erb"
-			],
-			[
-				"produto_pedidos/",
-				"app/views/produto_pedidos/edit.html.erb"
 			]
 		],
 		"width": 0.0

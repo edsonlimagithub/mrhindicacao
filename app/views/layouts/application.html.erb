@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Myapp" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "MrhIndicação" %></title>
     <meta name="description" content="">
     <meta name="author" content="">
     <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -12,13 +12,9 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
-        <div class="container">
-          <%= render 'layouts/navigation' %>
-        </div>
-      </nav>
-    </header>
+    <!-- menu de navegação -->
+    <%= render 'layouts/navigation' %>
+       
     <div id="main" role="main">
       <div class="container">
         <div class="content">
@@ -33,5 +29,34 @@
         </div>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
+
+    <!-- modal sobre -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">MrhIndicação</h3>
+        </div>
+        <div class="modal-body">
+          <p>
+            MrhIndicação é um sistema desenvolvido para uso exclusivo da MrhGestão. Todos os direitos reservados.
+          </p>
+          <p>
+            <h5>Edsis Sistemas</h5>
+          </p>
+          <p>
+            <a target="_blank" href="http://edsis.com.br">www.edsis.com.br</a>
+          </p>
+          <p>
+            edsis@edsis.com.br
+          </p>
+          <p>
+            87408916
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+        </div>
+    </div>
+
   </body>
 </html>

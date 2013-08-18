@@ -1,39 +1,42 @@
-<div class="dropdown">
-  <a data-toggle="dropdown" href="#" class='brand'>
-    <%= link_to "Home", root_path, :class => 'brand' %>
-  </a>
-  <a data-toggle="dropdown" href="#" class='brand'>Cadastros<span class="caret"></span></a>
-  </a>
-  <ul class="dropdown-menu" arial-labelledby="dLabel" role='menu'>
-    <li class='dropdown'><%= link_to 'Usuario', "/user", :html => "role='menuitem'"  %></li>
-    <li class='dropdown'><%= link_to 'Setor', "/setors", :html => "role='menuitem'"  %></li>
-    <li class='dropdown'><%= link_to 'Papel', "/roles", :html => "role='menuitem'"  %></li>
-    <li class='dropdown'><%= link_to 'Cliente', "/clientes", :html => "role='menuitem'"  %></li>
-    <li class='dropdown'><%= link_to 'Servico', "/servicos", :html => "role='menuitem'"  %></li>
-  </ul>
-</div>
-<a data-toggle="dropdown" href="#" class='brand'>Indicações<span class="caret"></span></a>
-<ul class="dropdown-menu" arial-labelledby="dLabel" role='menu'>
-    <li class='dropdown'><%= link_to 'Nova', "/indicacaos/new", :html => "role='menuitem'"  %></li>
-</ul>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
 
-<ul class="nav">
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>        
-    </li>
-  <% else %>
-    <li>
-    <%= link_to('Login', new_user_session_path)  %>  
-    </li>
-  <% end %>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to('Edit account', edit_user_registration_path) %>
-    </li>
-  <% else %>
-    <li>
-    <%= link_to('Sign up', new_user_registration_path)  %>
-    </li>
-  <% end %>
-</ul>
+    <ul class="nav">  
+        <a class="brand" target="_blank" href="http://mrhgestao.com.br">Mrh</a>  
+        
+        <% if user_signed_in? %>
+        <li class="active"><a href="/">Home</a></li>  
+
+        <li class="dropdown" id="cadastrosmenu">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros<b class="caret"></b></a>
+          <ul class="dropdown-menu">  
+                <li><a href="/user">Usuário</a></li>  
+                <li><a href="/setors">Setor</a></li>  
+                <li><a href="/papels">Papel</a></li>  
+                <li><a href="/servicos">Serviço</a></li>  
+            </ul>  
+        </li>
+
+        <li class="dropdown" id="indicacoesmenu">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Indicações<b class="caret"></b></a>
+          <ul class="dropdown-menu">  
+                <li><a href="/indicacaos/new">Indicar</a></li>  
+                <li><a href="/indicacaos">Listar</a></li>  
+            </ul>  
+        </li>    
+        <% end %>
+        <li><a href="#modal_sobre" data-toggle="modal" data-target="#myModal">Sobre</a></li>  
+    </ul> 
+
+      <ul class="nav">
+        <% if user_signed_in? %>
+          <li>
+          <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>        
+          </li>
+        <% end %>
+      </ul>
+
+    </div>
+  </div>
+</div>

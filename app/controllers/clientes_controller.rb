@@ -7,6 +7,7 @@ class ClientesController < ApplicationController
 
   def index_modal
     @clientes = Cliente.all
+    render :layout => false
   end
 
   # GET /clientes/1

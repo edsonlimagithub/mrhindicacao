@@ -5,6 +5,10 @@ class Ability
     
     if user.role.descricao == 'administrador'
         can :manage, :all
+    elsif user.role.descricao == 'usuario'
+    	can [:create, :read, :update], Indicacao
+    elsif user.role.descricao == 'observador'
+    	can :read, :all
     end
         
   end

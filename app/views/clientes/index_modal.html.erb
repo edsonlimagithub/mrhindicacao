@@ -1,27 +1,37 @@
-<table>
-  <tbody>
+<%= stylesheet_link_tag "DT_bootstrap" %>
+<%= javascript_include_tag "DT_bootstrap" %>
+<%= javascript_include_tag "jquery.dataTables.min" %>
+
+<table id="clientes" cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+  <thead>
   <tr>
     <th>Nome</th>
     <th>Contato</th>
     <th>Telefone</th>
-    <th>Email</th>
     <th>inserir</th>
   </tr>
-
+  </thead>
+  <tbody>
 <% @clientes.each do |cliente| %>
   <tr>
     <td><%= cliente.nome %></td>
     <td><%= cliente.contato %></td>
     <td><%= cliente.telefone %></td>
-    <td><%= cliente.email %></td>
-    <td><%= link_to 'selecionar', :click => "selecionar_cliente(#{cliente.id})"%></td>
+    <td><input type="button" value='selecionar', onclick="selecionar_cliente(<%= [cliente.id, cliente.nome] %>)" /></td>
   </tr>
 <% end %>
+  </tbody>
 </table>
 <script type="text/javascript">
-var selectionar_cliente = function(cliente_id){
-  alert(cliente_id)
-}
+  $(function(){
+    $('#clientes').dataTable();
+  });
+
+  var selecionar_cliente = function(cliente){
+    $("#indicacao_cliente_id").val(cliente[0]);
+    $("#cliente_nome").val(cliente[1]);
+    $('#modalPesquisa').modal('hide')
+  }
 </script>
 
 

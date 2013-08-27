@@ -43,7 +43,7 @@ class IndicacaosController < ApplicationController
   # POST /indicacaos.json
   def create
     @indicacao = Indicacao.new(params[:indicacao])
-
+    @indicacao.user = current_user
     respond_to do |format|
       if @indicacao.save
         format.html { redirect_to @indicacao, notice: 'Indicacao was successfully created.' }

@@ -1,31 +1,44 @@
-<h1>Listing indicacaos</h1>
+<h5>Indicações</h5>
 
-<table>
+<table id="indicacoes_tab">
+  <thead>
   <tr>
+    <th></th>
     <th>Data</th>
     <th>Usuario</th>
     <th>Cliente</th>
     <th>Servico</th>
     <th>Detalhes</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Exibir</th>
+    <th>Editar</th>
+    <th>Apagar</th>
   </tr>
-
+  </thead>
+<tbody>
 <% @indicacaos.each do |indicacao| %>
   <tr>
-    <td><%= indicacao.data %></td>
-    <td><%= indicacao.usuario_id %></td>
-    <td><%= indicacao.cliente_id %></td>
-    <td><%= indicacao.servico_id %></td>
+    <td><%= check_box_tag "#{indicacao.id}"%></td>
+    <td><%= indicacao.data.strftime("%d/%m/%Y") %></td>
+    <td><%= indicacao.user.nome %></td>
+    <td><%= indicacao.cliente.nome %></td>
+    <td><%= indicacao.servico.descricao %></td>
     <td><%= indicacao.detalhes %></td>
     <td><%= link_to 'Show', indicacao %></td>
     <td><%= link_to 'Edit', edit_indicacao_path(indicacao) %></td>
     <td><%= link_to 'Destroy', indicacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
+</tbody>
 </table>
 
 <br />
 
-<%= link_to 'New Indicacao', new_indicacao_path %>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#indicacoes_tab').dataTable({
+      "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+      "sWrapper": "dataTables_wrapper form-inline"
+    });
+  });
+
+</script>

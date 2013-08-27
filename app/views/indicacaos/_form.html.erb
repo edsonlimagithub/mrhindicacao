@@ -13,18 +13,18 @@
 
   <div class="field">
     <%= f.label :data %><br />
-    <%= f.date_select :data %>
+    <%= f.date_select :data, :order => [:day, :month, :year] %>
   </div>
   <div class="field">
     <%= f.label :cliente_id %><br />
-    <%= f.text_field :cliente_id, :disabled => true %>
+    <%= f.text_field :cliente_id %>
     <input type='text' id='cliente_nome' disabled='disabled'>
     <a data-toggle="modal" data-remote="/cliente/index_modal" data-target="#modalPesquisa" >Pesquisar</a>
     <a data-toggle="modal" data-remote="/cliente/novo_modal" data-target="#modalNovo" >Novo cliente</a>
   </div>
   <div class="field">
     <%= f.label :servico_id %><br />
-    <%= f.select :servico_id, Servico.all.collect{|s| [s.id, s.descricao]} %>
+    <%= f.select :servico_id, Servico.all.collect{|s| [s.descricao, s.id]} %>
   </div>
   <div class="field">
     <%= f.label :detalhes %><br />

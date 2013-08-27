@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130812234211) do
+ActiveRecord::Schema.define(:version => 20130824151158) do
 
   create_table "clientes", :force => true do |t|
     t.string   "nome"
@@ -42,8 +42,10 @@ ActiveRecord::Schema.define(:version => 20130812234211) do
   create_table "servicos", :force => true do |t|
     t.string   "descricao"
     t.float    "porcentagem"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.text     "detalhes"
+    t.integer  "dias_acompanhamento"
   end
 
   create_table "setors", :force => true do |t|

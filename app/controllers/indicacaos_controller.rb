@@ -82,4 +82,10 @@ class IndicacaosController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def enviar_email
+    params[:indicacoes].each do |i|
+      abort i.inspect
+    end
+  end
 end

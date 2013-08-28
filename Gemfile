@@ -10,6 +10,7 @@ gem 'therubyracer'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'cancan'
+gem 'roadie'
 
 
 # Gems used only for assets and not required

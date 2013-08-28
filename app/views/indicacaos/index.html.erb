@@ -1,36 +1,37 @@
 <h5>Indicações</h5>
-
-<table id="indicacoes_tab">
-  <thead>
-  <tr>
-    <th></th>
-    <th>Data</th>
-    <th>Usuario</th>
-    <th>Cliente</th>
-    <th>Servico</th>
-    <th>Detalhes</th>
-    <th>Exibir</th>
-    <th>Editar</th>
-    <th>Apagar</th>
-  </tr>
-  </thead>
-<tbody>
-<% @indicacaos.each do |indicacao| %>
-  <tr>
-    <td><%= check_box_tag "#{indicacao.id}"%></td>
-    <td><%= indicacao.data.strftime("%d/%m/%Y") %></td>
-    <td><%= indicacao.user.nome %></td>
-    <td><%= indicacao.cliente.nome %></td>
-    <td><%= indicacao.servico.descricao %></td>
-    <td><%= indicacao.detalhes %></td>
-    <td><%= link_to 'Show', indicacao %></td>
-    <td><%= link_to 'Edit', edit_indicacao_path(indicacao) %></td>
-    <td><%= link_to 'Destroy', indicacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<%= form_tag '/indicacao/enviar_email', :method => 'post' do %>
+  <%= submit_tag 'Enviar email'%>
+  <table id="indicacoes_tab" class="table table-striped table-bordered">
+    <thead>
+    <tr>
+      <th><i class="icon-share-alt"></i></th>
+      <th>Data</th>
+      <th>Usuario</th>
+      <th>Cliente</th>
+      <th>Servico</th>
+      <th>Detalhes</th>
+      <th>Exibir</th>
+      <th>Editar</th>
+      <th>Apagar</th>
+    </tr>
+    </thead>
+  <tbody>
+  <% @indicacaos.each do |indicacao| %>
+    <tr>
+      <td><%= check_box_tag "indicacoes[#{indicacao.id}]"%></td>
+      <td><%= indicacao.data.strftime("%d/%m/%Y") %></td>
+      <td><%= indicacao.user.nome %></td>
+      <td><%= indicacao.cliente.nome %></td>
+      <td><%= indicacao.servico.descricao %></td>
+      <td><%= indicacao.detalhes %></td>
+      <td><%= link_to 'Show', indicacao %></td>
+      <td><%= link_to 'Edit', edit_indicacao_path(indicacao) %></td>
+      <td><%= link_to 'Destroy', indicacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
 <% end %>
-</tbody>
-</table>
-
 <br />
 
 <script type="text/javascript">

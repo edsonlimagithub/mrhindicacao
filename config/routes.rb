@@ -25,6 +25,8 @@ Mrhindicacao::Application.routes.draw do
   match "/cliente/novo_modal" => "clientes#novo_modal"
   #cria novo cliente pela janela modal
   match "/cliente/create_modal" => "clientes#create_modal"
+  #enviar email das indicações marcadas
+  match '/indicacao/enviar_email' => 'indicacaos#enviar_email'
 
   
 end

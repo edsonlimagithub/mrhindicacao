@@ -14,7 +14,18 @@ Mrhindicacao::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { host: "0.0.0.0:3000" }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.live.com",
+    port: 587,
+    domain: "edsis.com.br",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: "edson-lima@outlook.com",
+    password: "email2178"
+  }
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log

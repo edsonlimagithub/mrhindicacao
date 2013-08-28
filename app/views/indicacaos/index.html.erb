@@ -37,8 +37,13 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('#indicacoes_tab').dataTable({
-      "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
-      "sWrapper": "dataTables_wrapper form-inline"
+       "oLanguage": {
+      "sLengthMenu": "_MENU_ registros por página",
+      "sZeroRecords": "Nenhum registro",
+      "sInfo": "Exibindo _START_ de _END_ total _TOTAL_ registros",
+      "sInfoEmpty": "Exibindo 0 de 0 de 0 registros",
+      "sInfoFiltered": "(filtered from _MAX_ total records)"
+    }
     });
   });
 

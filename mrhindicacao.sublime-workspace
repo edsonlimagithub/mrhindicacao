@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"sub",
-				"subject"
+				"t",
+				"tbody	Tag"
 			],
 			[
-				"t",
-				"thead	Tag"
+				"sub",
+				"subject"
 			],
 			[
 				"new",
@@ -235,7 +235,7 @@
 			"file": "app/views/indicacaos/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1353,
+				"buffer_size": 1532,
 				"line_ending": "Unix"
 			}
 		},
@@ -251,7 +251,7 @@
 			"file": "app/mailers/email.rb",
 			"settings":
 			{
-				"buffer_size": 308,
+				"buffer_size": 321,
 				"line_ending": "Unix"
 			}
 		},
@@ -268,6 +268,38 @@
 			"settings":
 			{
 				"buffer_size": 779,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/setors/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 78,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/setors/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1002,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/user/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1178,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/environments/development.rb",
+			"settings":
+			{
+				"buffer_size": 1788,
 				"line_ending": "Unix"
 			}
 		}
@@ -344,6 +376,7 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/assets/javascripts/jquery.dataTables.min.js",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/stylesheets/DT_bootstrap.css",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/indicacao.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/cliente.rb",
@@ -470,8 +503,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/views/webservice/importa_ativacoes_periodo.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/editar_ativacao_auditada.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/controllers/webservice_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/upload_planilha_auditoria.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/planilha_auditoria.rb"
+		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/upload_planilha_auditoria.html.erb"
 	],
 	"find":
 	{
@@ -489,6 +521,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Search",
+			"sInfoFiltered",
 			"img",
 			"filtros",
 			"filtro",
@@ -564,7 +598,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -618,7 +652,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1122.0,
+						"translation.y": 357.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -656,15 +690,15 @@
 					"file": "app/views/indicacaos/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 1353,
+						"buffer_size": 1532,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								705,
-								705
+								1521,
+								1521
 							]
 						],
 						"settings":
@@ -674,7 +708,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -712,15 +746,15 @@
 					"file": "app/mailers/email.rb",
 					"settings":
 					{
-						"buffer_size": 308,
+						"buffer_size": 321,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								316,
+								316
 							]
 						],
 						"settings":
@@ -775,13 +809,122 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								478,
+								478
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/setors/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 78,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/setors/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								975,
+								975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/user/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								916,
+								916
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "config/environments/development.rb",
+					"settings":
+					{
+						"buffer_size": 1788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1034,
+								1034
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -839,6 +982,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"indicacaos/",
+				"app/views/indicacaos/index.html.erb"
+			],
+			[
+				"data",
+				"app/assets/javascripts/jquery.dataTables.min.js"
+			],
+			[
+				"setors/",
+				"app/views/setors/index.html.erb"
+			],
+			[
+				"user/",
+				"app/views/user/index.html.erb"
+			],
+			[
+				"setors/new",
+				"app/views/setors/new.html.erb"
+			],
 			[
 				"/servicos/",
 				"app/views/servicos/_form.html.erb"
@@ -918,10 +1085,6 @@
 			[
 				"app",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"indicacaos/",
-				"app/views/indicacaos/_form.html.erb"
 			],
 			[
 				"servicos/fo",
@@ -1110,10 +1273,6 @@
 			[
 				"datatabl",
 				"public/stylesheets/jquery.dataTables.css"
-			],
-			[
-				"data",
-				"db/migrate/20120530194326_add_cpf_to_ativacoes.rb"
 			],
 			[
 				"theme",
@@ -1334,22 +1493,6 @@
 			[
 				"questionario",
 				"app/helpers/questionarios_helper.rb"
-			],
-			[
-				"questionario_re",
-				"app/models/questionario_resposta.rb"
-			],
-			[
-				"questao",
-				"app/models/questao_opcao.rb"
-			],
-			[
-				"questao_o",
-				"app/models/questao_opcao.rb"
-			],
-			[
-				"pedidos",
-				"app/controllers/produto_pedidos_controller.rb"
 			]
 		],
 		"width": 0.0

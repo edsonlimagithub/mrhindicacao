@@ -1,0 +1,25 @@
+<%= form_for(@user) do |f| %>
+
+  <div>Nome<br />
+  <%= f.text_field :nome %></div>
+
+  <div>Telefone<br />
+  <%= f.text_field :telefone %></div>
+
+  <div>Email<br />
+  <%= f.email_field :email %></div>
+
+  <div>Setor<br />
+  <%= f.collection_select :setor_id, Setor.all, :id, :descricao, :selected => f.object.setor_id %></div>
+
+  <div>Papel<br />
+  <%= f.collection_select :role_id, Role.all, :id, :descricao , :selected => f.object.role_id %></div>
+
+  <div>Senha<br />
+  <%= f.password_field :password %></div>
+
+  <div>Confirme a senha<br />
+  <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.submit %></div>
+<% end %>

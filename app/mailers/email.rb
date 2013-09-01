@@ -9,6 +9,6 @@ class Email < ActionMailer::Base
   def indicacao(email)
     @greeting = "Hi"
 
-    mail to: email, subject: "Testando email"
+    mail to: email, subject: "Testando email para cabrito"
   end
 end

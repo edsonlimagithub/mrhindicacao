@@ -18,13 +18,14 @@ Mrhindicacao::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp.live.com",
+    address: "mail.mrhgestao.com.br",
     port: 587,
-    domain: "edsis.com.br",
+    domain: "mrhgestao.com.br",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "edson-lima@outlook.com",
-    password: "email2178"
+    user_name: "indicacao@mrhgestao.com.br",
+    openssl_verify_mode:  'none',
+    password: "251205"
   }
 
   # Print deprecation notices to the Rails logger

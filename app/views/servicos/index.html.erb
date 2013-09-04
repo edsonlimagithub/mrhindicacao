@@ -14,12 +14,12 @@
     <td><%= servico.descricao %></td>
     <td><%= servico.porcentagem %></td>
     <td><%= link_to 'Show', servico %></td>
-    <td><%= link_to 'Edit', edit_servico_path(servico) %></td>
-    <td><%= link_to 'Destroy', servico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Alterar', edit_servico_path(servico) %></td>
+    <td><%= link_to 'Apagar', servico, method: :delete, data: { confirm: 'Deseja realmente apagar?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Servico', new_servico_path %>
+<%= link_to 'Novo Servico', new_servico_path %>

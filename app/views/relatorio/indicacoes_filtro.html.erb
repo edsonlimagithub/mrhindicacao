@@ -1,0 +1,39 @@
+<h3>Relatório de indicações</h3>
+
+<%= form_tag '/relatorios/indicacoes', :method => 'post' do %>
+	<div>
+		Periodo</br>
+		<%= text_field_tag 'data-inicial', Time.now.strftime("%d/%m/%Y") , :class => 'datepicker' %>
+		<%= text_field_tag 'data-final', Time.now.strftime("%d/%m/%Y"), :class => 'datepicker' %>
+	</div>
+	<div>
+		Usuário</br>
+		<%= select_tag 'user_id', options_from_collection_for_select(User.all, "id", "nome"), :prompt => 'todos' %>
+	</div>
+	<div>
+		Serviço</br>
+		<%= select_tag 'servico_id', options_from_collection_for_select(Servico.all, "id", "descricao"), :prompt => 'todos' %>
+	</div>
+	<div>
+		Cliente</br>
+		<%= select_tag 'cliente_id', options_from_collection_for_select(Cliente.all, "id", "nome"), :prompt => 'todos' %>
+	</div>
+	<div>
+		Status da indicação
+	</div>
+	<div>
+		</br>
+		<%=h 'Saída' %></br>
+		<%= radio_button_tag 'saida', 'tela' %> Tela</br>
+		<%= radio_button_tag 'saida', 'impressao' %> Impressão
+	</div>
+	<%= submit_tag 'enviar'%>
+<% end %>
+
+<script type='text/javascript'>
+	$(function(){
+		$('.datepicker').datepicker({
+			format: 'dd/mm/yyyy'
+		});
+	});
+</script>

@@ -21,7 +21,7 @@ Mrhindicacao::Application.configure do
     address: "mail.mrhgestao.com.br",
     port: 587,
     domain: "mrhgestao.com.br",
-    authentication: "plain",
+    authentication: :login,
     enable_starttls_auto: true,
     user_name: "indicacao@mrhgestao.com.br",
     openssl_verify_mode:  'none',

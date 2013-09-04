@@ -6,32 +6,38 @@
         <a class="brand" target="_blank" href="http://mrhgestao.com.br">Mrh</a>  
         
         <% if user_signed_in? %>
-        <li class="active"><a href="/">Home</a></li>  
+          <li class="active"><a href="/">Home</a></li>  
 
-        <li class="dropdown" id="cadastrosmenu">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros<b class="caret"></b></a>
-          <ul class="dropdown-menu">  
-                <li><a href="/user">Usuário</a></li>  
-                <li><a href="/setors">Setor</a></li>  
-                <li><a href="/servicos">Serviço</a></li>  
-            </ul>  
-        </li>
+          <% if can? :create, :all %>
+          <li class="dropdown" id="cadastrosmenu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros<b class="caret"></b></a>
+            <ul class="dropdown-menu">  
+                  <li><a href="/user">Usuário</a></li>  
+                  <li><a href="/setors">Setor</a></li>  
+                  <li><a href="/servicos">Serviço</a></li>  
+              </ul>  
+          </li>
+          <% end %>
 
-        <li class="dropdown" id="indicacoesmenu">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Indicações<b class="caret"></b></a>
-          <ul class="dropdown-menu">  
-                <li><a href="/indicacaos/new">Indicar</a></li>  
-                <li><a href="/indicacaos">Listar</a></li>  
-            </ul>  
-        </li>
-
-        <li class="dropdown" id="indicacoesmenu">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<b class="caret"></b></a>
-          <ul class="dropdown-menu">  
-                <li><a href="#">Indicações</a></li>  
-            </ul>  
-        </li>
-
+           <% if can? :create, Indicacao %>
+          <li class="dropdown" id="indicacoesmenu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Indicações<b class="caret"></b></a>
+            <ul class="dropdown-menu">  
+                  <li><a href="/indicacaos/new">Indicar</a></li>
+                  <% if can? :read, Indicacao %>  
+                  <li><a href="/indicacaos">Listar</a></li>
+                  <% end %>  
+              </ul>  
+          </li>
+          <% end %>
+          <% if can? :create, :all %>
+            <li class="dropdown" id="indicacoesmenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<b class="caret"></b></a>
+              <ul class="dropdown-menu">  
+                    <li><a href="/relatorios/indicacoes_filtro">Indicações</a></li>  
+                </ul>  
+            </li>
+          <% end %>
         <% end %>
         <li><a href="#modal_sobre" data-toggle="modal" data-target="#myModal">Sobre</a></li>  
     </ul> 
@@ -40,6 +46,9 @@
         <% if user_signed_in? %>
           <li>
           <%= link_to("Sair", destroy_user_session_path, :method=>'delete') %>        
+          </li>
+          <li>
+            <%= current_user.nil? ? "" : current_user.nome %>
           </li>
         <% end %>
       </ul>

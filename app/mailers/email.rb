@@ -7,8 +7,9 @@ class Email < ActionMailer::Base
   #   en.email.indicacao.subject
   #
   def indicacao(email)
+    #email = indicacao.servico.email
     @greeting = "Hi"
 
-    mail to: email, subject: "Testando email para cabrito"
+    mail to: email, subject: "testando"
   end
 end

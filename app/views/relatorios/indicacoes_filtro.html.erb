@@ -1,6 +1,6 @@
 <h3>Relatório de indicações</h3>
 
-<%= form_tag '/relatorios/indicacoes', :method => 'post' do %>
+<%= form_tag '/relatorio/indicacoes', :method => 'post' do %>
 	<div>
 		Periodo</br>
 		<%= text_field_tag 'data-inicial', Time.now.strftime("%d/%m/%Y") , :class => 'datepicker' %>

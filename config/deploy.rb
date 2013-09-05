@@ -17,6 +17,7 @@ set :user, "deployer"
 set :use_sudo, false
 set :deploy_via, :copy
 
+set :normalize_asset_timestamps, false
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"

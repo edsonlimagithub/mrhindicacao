@@ -1,5 +1,5 @@
-class RelatorioController < ApplicationController
-	load_and_authorize_resource :class => Relatorio
+class RelatoriosController < ApplicationController
+	#load_and_authorize_resource 
 
 	def indicacoes_filtro
 	end

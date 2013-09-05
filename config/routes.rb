@@ -6,7 +6,7 @@ Mrhindicacao::Application.routes.draw do
 
   resources :clientes
 
-  resources :relatorio
+  #resources :relatorios
 
   get "user/index"
 
@@ -30,9 +30,9 @@ Mrhindicacao::Application.routes.draw do
   #enviar email das indicações marcadas
   match '/indicacao/enviar_email' => 'indicacaos#enviar_email'
   #filtro para relatório de indicações
-  match '/relatorios/indicacoes_filtro' => 'relatorio#indicacoes_filtro'
+  match '/relatorio/indicacoes_filtro' => 'relatorios#indicacoes_filtro'
   #relatório de indicações
-  match 'relatorios/indicacoes' => 'relatorio#indicacoes'
+  match 'relatorio/indicacoes' => 'relatorios#indicacoes'
 
   
 end

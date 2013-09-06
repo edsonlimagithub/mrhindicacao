@@ -21,8 +21,8 @@ Mrhindicacao::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "mail.mrhgestao.com.br",
     port: 587,
-    domain: "localhost",
-    authentication: "plain",
+    domain: "mrhgestao.com.br",
+    authentication: :login,
     enable_starttls_auto: true,
     user_name: "indicacao@mrhgestao.com.br",
     openssl_verify_mode:  'none',

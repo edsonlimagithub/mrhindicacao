@@ -1,3 +1,25 @@
-Email#indicacao
+Prezado,
 
-<%= @greeting %>, find me in app/views/app/views/email/indicacao.text.erb
+Sinalizar o resultado da indicação abaixo
+
+<%= @greeting %>
+<table>
+	<thead>
+	<tr>
+		<th>DATA DA INDICAÇÃO</th>
+		<th>QUEM INDICOU</th>
+		<th>EMPRESA INDICADA</th>
+		<th>DATALHES DA INDICAÇÃO</th>
+		<th>SIM OU NÃO</th>
+		<th>SE SIM, INFORMAR DETALHES DA VENDA (QUANTIDADE, TIPO DE SERVIÇO)</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= @indicacao.created_at %><td>
+			<td><%= @indicacao.user.nome %><td>
+			<td><%= @indicacao.cliente.nome %><td>
+			<td><%= @indicacao.detalhes %><td>	
+		</tr>
+	</tbody>
+</table>

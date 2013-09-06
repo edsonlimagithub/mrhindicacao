@@ -214,6 +214,30 @@
 				"buffer_size": 2090,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/mailers/email.rb",
+			"settings":
+			{
+				"buffer_size": 353,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/indicacaos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1532,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/indicacaos_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2364,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
@@ -510,7 +534,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -525,8 +549,8 @@
 						"selection":
 						[
 							[
-								1075,
-								1075
+								938,
+								938
 							]
 						],
 						"settings":
@@ -537,6 +561,90 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 204.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/mailers/email.rb",
+					"settings":
+					{
+						"buffer_size": 353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/indicacaos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/indicacaos_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2318,
+								2318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1122.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -590,6 +698,22 @@
 		"selected_items":
 		[
 			[
+				"email",
+				"app/mailers/email.rb"
+			],
+			[
+				"indicao",
+				"app/controllers/indicacaos_controller.rb"
+			],
+			[
+				"indicacao/",
+				"app/views/indicacaos/index.html.erb"
+			],
+			[
+				"mail",
+				"app/mailers/email.rb"
+			],
+			[
 				"productio",
 				"config/environments/production.rb"
 			],
@@ -626,10 +750,6 @@
 				"app/views/layouts/_navigation.html.erb"
 			],
 			[
-				"indicao",
-				"app/controllers/indicacaos_controller.rb"
-			],
-			[
 				"routes",
 				"config/routes.rb"
 			],
@@ -648,10 +768,6 @@
 			[
 				"relato",
 				"app/controllers/relatorio_controller.rb"
-			],
-			[
-				"mail",
-				"app/mailers/email.rb"
 			],
 			[
 				"indica",
@@ -1092,14 +1208,6 @@
 			[
 				"planilha",
 				"app/models/planilha_churn.rb"
-			],
-			[
-				"listar",
-				"app/views/ativacaos/listar_ativacoes_auditadas.html.erb"
-			],
-			[
-				"convert",
-				"lib/funcoes_data/date_convert.rb"
 			]
 		],
 		"width": 0.0

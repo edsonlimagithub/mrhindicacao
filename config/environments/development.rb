@@ -17,16 +17,28 @@ Mrhindicacao::Application.configure do
   config.action_mailer.default_url_options = { host: "0.0.0.0:3000" }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
+  
   config.action_mailer.smtp_settings = {
     address: "mail.mrhgestao.com.br",
     port: 587,
-    domain: "mrhgestao.com.br",
-    authentication: :login,
+    domain: "localhost",
+    authentication: "plain",
     enable_starttls_auto: true,
     user_name: "indicacao@mrhgestao.com.br",
     openssl_verify_mode:  'none',
     password: "251205"
   }
+
+  # config.action_mailer.smtp_settings = {
+  #   address: "smtp.live.com",
+  #   port: 587,
+  #   domain: "localhost.com.br",
+  #   authentication: "plain",
+  #   enable_starttls_auto: true,
+  #   user_name: "edson-lima@outlook.com",
+  #   #openssl_verify_mode:  'none',
+  #   password: "email2178"
+  # }
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log

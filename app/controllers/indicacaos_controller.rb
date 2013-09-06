@@ -86,7 +86,7 @@ class IndicacaosController < ApplicationController
   def enviar_email
     params[:indicacoes].each do |i, index|
       indicacao = Indicacao.find(i)
-      Email.indicacao("ti@dsmtelecom.com.br").deliver
+      Email.indicacao(indicacao.servico.email).deliver
     end
     render :index
   end

@@ -10,6 +10,6 @@ class Email < ActionMailer::Base
     #email = indicacao.servico.email
     @greeting = "Hi"
 
-    mail to: email, subject: "testando"
+    mail to: email, subject: "testando mais em 08:49"
   end
 end

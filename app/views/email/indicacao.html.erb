@@ -1,4 +1,4 @@
-Prezado,
+Prezado,</br>
 
 Sinalizar o resultado da indicação abaixo
 
@@ -16,10 +16,12 @@ Sinalizar o resultado da indicação abaixo
 	</thead>
 	<tbody>
 		<tr>
-			<td><%= @indicacao.created_at %><td>
+			<td><%= @indicacao.created_at.strftime("%d/%m/%Y") %><td>
 			<td><%= @indicacao.user.nome %><td>
 			<td><%= @indicacao.cliente.nome %><td>
-			<td><%= @indicacao.detalhes %><td>	
+			<td><%= @indicacao.detalhes %><td>
+			<td></td>
+			<td></td>	
 		</tr>
 	</tbody>
 </table>

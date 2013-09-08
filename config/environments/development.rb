@@ -26,7 +26,8 @@ Mrhindicacao::Application.configure do
     enable_starttls_auto: true,
     user_name: "indicacao@mrhgestao.com.br",
     openssl_verify_mode:  'none',
-    password: "251205"
+    password: "251205",
+    content_type: "text/html"
   }
 
   # config.action_mailer.smtp_settings = {

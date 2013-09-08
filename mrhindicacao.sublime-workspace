@@ -211,7 +211,7 @@
 			"file": "config/environments/development.rb",
 			"settings":
 			{
-				"buffer_size": 2090,
+				"buffer_size": 2127,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,7 +219,7 @@
 			"file": "app/mailers/email.rb",
 			"settings":
 			{
-				"buffer_size": 353,
+				"buffer_size": 352,
 				"line_ending": "Unix"
 			}
 		},
@@ -235,7 +235,23 @@
 			"file": "app/controllers/indicacaos_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2364,
+				"buffer_size": 2375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/email/indicacao.html.erb",
+			"settings":
+			{
+				"buffer_size": 577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/environments/production.rb",
+			"settings":
+			{
+				"buffer_size": 2777,
 				"line_ending": "Unix"
 			}
 		}
@@ -312,6 +328,7 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/views/email/indicacao.text.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/relatorios_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/index.html.erb",
@@ -438,8 +455,7 @@
 		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130710173028_add_status_auditoria_to_ativacao_aditada.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/filtrar_linhas.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130708162111_add_filial_descricao_to_auditoria.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/analise_auditorias_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/listar_planilhas_churn.html.erb"
+		"/home/edsonlima/projetos/dsmmanager/app/controllers/analise_auditorias_controller.rb"
 	],
 	"find":
 	{
@@ -534,7 +550,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -542,15 +558,15 @@
 					"file": "config/environments/development.rb",
 					"settings":
 					{
-						"buffer_size": 2090,
+						"buffer_size": 2127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								938,
-								938
+								1152,
+								1152
 							]
 						],
 						"settings":
@@ -570,15 +586,15 @@
 					"file": "app/mailers/email.rb",
 					"settings":
 					{
-						"buffer_size": 353,
+						"buffer_size": 352,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								341,
-								341
+								272,
+								272
 							]
 						],
 						"settings":
@@ -626,15 +642,15 @@
 					"file": "app/controllers/indicacaos_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2364,
+						"buffer_size": 2375,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2318,
-								2318
+								2329,
+								2329
 							]
 						],
 						"settings":
@@ -645,6 +661,61 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1122.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/email/indicacao.html.erb",
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config/environments/production.rb",
+					"settings":
+					{
+						"buffer_size": 2777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2772,
+								2772
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -698,8 +769,12 @@
 		"selected_items":
 		[
 			[
+				"produ",
+				"config/environments/production.rb"
+			],
+			[
 				"email",
-				"app/mailers/email.rb"
+				"app/views/email/indicacao.text.erb"
 			],
 			[
 				"indicao",
@@ -836,10 +911,6 @@
 			[
 				"gem",
 				"Gemfile"
-			],
-			[
-				"produ",
-				"config/environments/production.rb"
 			],
 			[
 				"envir",
@@ -1214,11 +1285,11 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,

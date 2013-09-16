@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"cliente",
+				"cliente"
+			],
+			[
 				"data",
 				"data_final"
 			],
@@ -251,7 +255,39 @@
 			"file": "config/environments/production.rb",
 			"settings":
 			{
-				"buffer_size": 2777,
+				"buffer_size": 2808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/indicacao.rb",
+			"settings":
+			{
+				"buffer_size": 431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 2192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/application_helper.rb",
+			"settings":
+			{
+				"buffer_size": 29,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/servico.rb",
+			"settings":
+			{
+				"buffer_size": 197,
 				"line_ending": "Unix"
 			}
 		}
@@ -550,7 +586,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -565,8 +601,8 @@
 						"selection":
 						[
 							[
-								1152,
-								1152
+								1168,
+								1168
 							]
 						],
 						"settings":
@@ -697,15 +733,15 @@
 					"file": "config/environments/production.rb",
 					"settings":
 					{
-						"buffer_size": 2777,
+						"buffer_size": 2808,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2772,
-								2772
+								2803,
+								2803
 							]
 						],
 						"settings":
@@ -713,6 +749,112 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 867.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/indicacao.rb",
+					"settings":
+					{
+						"buffer_size": 431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 2192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/helpers/application_helper.rb",
+					"settings":
+					{
+						"buffer_size": 29,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/models/servico.rb",
+					"settings":
+					{
+						"buffer_size": 197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								191,
+								191
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -769,6 +911,22 @@
 		"selected_items":
 		[
 			[
+				"servico",
+				"app/models/servico.rb"
+			],
+			[
+				"application",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"indica",
+				"app/models/indicacao.rb"
+			],
+			[
 				"produ",
 				"config/environments/production.rb"
 			],
@@ -791,10 +949,6 @@
 			[
 				"productio",
 				"config/environments/production.rb"
-			],
-			[
-				"app",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"indicacaos",
@@ -843,10 +997,6 @@
 			[
 				"relato",
 				"app/controllers/relatorio_controller.rb"
-			],
-			[
-				"indica",
-				"app/controllers/indicacaos_controller.rb"
 			],
 			[
 				"servicos/",
@@ -1271,14 +1421,6 @@
 			[
 				"analisar",
 				"app/views/ativacaos/analisar_churn.html.erb"
-			],
-			[
-				"carregar",
-				"app/views/ativacaos/carregar_planilha_auditoria_final.html.erb"
-			],
-			[
-				"planilha",
-				"app/models/planilha_churn.rb"
 			]
 		],
 		"width": 0.0

@@ -1,0 +1,35 @@
+<html>
+<body>
+<h3>Nova Indicação</h3>
+<table>
+	<tr>
+		<th>Indicador</th>
+		<td><%= @indicacao.user.nome %></td>
+	</tr>
+	<tr>
+		<th>Serviço</th>
+		<td><%= @indicacao.servico.descricao %></td>
+	</tr>
+	<tr>
+		<th>Cliente</th>
+		<td><%= @indicacao.cliente.nome %></td>
+	</tr>
+	<tr>
+		<th>Contato</th>
+		<td><%= @indicacao.cliente.contato %></td>
+	</tr>
+	<tr>
+		<th>Telefone</th>
+		<td><%= @indicacao.cliente.telefone %></td>
+	</tr>
+	<tr>
+		<th>Email</th>
+		<td><%= @indicacao.cliente.email %></td>
+	</tr>
+	<tr>
+		<th>Detalhes</th>
+		<td><%= @indicacao.detalhes %></td>
+	</tr>
+</table>
+</body>
+</html>

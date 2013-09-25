@@ -17,7 +17,7 @@
   <div>Papel<br />
   <%= select_tag 'user[role_id]', options_from_collection_for_select(Role.all, "id", "descricao") %></div>
 
-  <div>Senha<br />
+  <div>Senha (minimo 6 caracteres)<br />
   <%= password_field_tag 'user[password]' %></div>
 
   <div>Confirme a senha<br />

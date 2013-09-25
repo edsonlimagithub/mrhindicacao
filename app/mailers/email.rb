@@ -1,3 +1,4 @@
+#encode-utf8
 class Email < ActionMailer::Base
   default from: "indicacao@mrhgestao.com.br"
 
@@ -11,5 +12,10 @@ class Email < ActionMailer::Base
     @indicacao = indicacao
 
     mail to: email, subject: "Indicacao"
+  end
+
+  def nova_indicacao(email, indicacao)
+    @indicacao = indicacao
+    mail to: email, subject: 'Nova indicacao'
   end
 end

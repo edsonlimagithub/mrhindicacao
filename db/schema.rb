@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130902235832) do
+ActiveRecord::Schema.define(:version => 20130924222306) do
 
   create_table "clientes", :force => true do |t|
     t.string   "nome"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20130902235832) do
     t.text     "detalhes"
     t.integer  "dias_acompanhamento"
     t.string   "email"
+    t.float    "comissao_valor"
   end
 
   create_table "setors", :force => true do |t|

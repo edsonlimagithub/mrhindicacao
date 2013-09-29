@@ -14,6 +14,9 @@
 			<th>
 				Servico
 			</th>
+			<th>
+				Situação
+			</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -31,6 +34,9 @@
 		</td>
 		<td>
 			<%= indicacao.servico.descricao %>
+		</td>
+		<td>
+			<%= (indicacao.concluida)? 'Concluida' : 'Aberta' %>
 		</td>
 	</tr>
 <% end %>

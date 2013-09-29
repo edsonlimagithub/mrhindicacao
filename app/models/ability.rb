@@ -6,7 +6,7 @@ class Ability
     if user.role.descricao == 'administrador'
         can :manage, :all
     elsif user.role.descricao == 'usuario'
-    	can [:create, :update], Indicacao
+    	can [:create, :update, :read], Indicacao
     elsif user.role.descricao == 'observador'
     	can :read, :all
     end

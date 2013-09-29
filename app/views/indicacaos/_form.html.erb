@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :data %><br />
-    <%= f.date_select :data, :order => [:day, :month, :year] %>
+    <%= date_select_br f %>
   </div>
   <div class="field">
     <%= f.label :cliente_id %><br />
@@ -30,6 +30,15 @@
     <%= f.label :detalhes %><br />
     <%= f.text_area :detalhes, :style => "width: 458px; height: 139px;"%>
   </div>
+
+  <% if current_user.role.descricao == 'administrador' %>
+    <div class="field">
+      <%= f.label :concluida %>
+      <%= f.check_box :concluida, :label => 'Conclída' %>
+    </div>    
+  <% end %>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

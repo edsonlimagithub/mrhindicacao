@@ -11,6 +11,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'cancan'
 gem 'roadie'
+gem 'fastercsv'
 
 
 # Gems used only for assets and not required

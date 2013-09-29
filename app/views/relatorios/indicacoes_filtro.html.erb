@@ -8,7 +8,11 @@
 	</div>
 	<div>
 		Usuário</br>
-		<%= select_tag 'user_id', options_from_collection_for_select(User.all, "id", "nome"), :prompt => 'todos' %>
+		<% if current_user.role.descricao == 'administrador' %>
+			<%= select_tag 'user_id', options_from_collection_for_select(User.all, "id", "nome"), :prompt => 'todos' %>
+		<% else %>
+			<%= select_tag 'user_id', options_for_select([[current_user.nome, current_user.id]]) %>
+		<% end %>
 	</div>
 	<div>
 		Serviço</br>
@@ -19,13 +23,17 @@
 		<%= select_tag 'cliente_id', options_from_collection_for_select(Cliente.all, "id", "nome"), :prompt => 'todos' %>
 	</div>
 	<div>
-		Status da indicação
+		Status da indicação </br>
+		<%= radio_button_tag 'status', 'todos', true %> Todos </br>
+		<%= radio_button_tag 'status', 'abertas' %> Abertas</br>
+		<%= radio_button_tag 'status', 'concluidas' %> Concluídas </br>
 	</div>
 	<div>
 		</br>
 		<%=h 'Saída' %></br>
-		<%= radio_button_tag 'saida', 'tela' %> Tela</br>
-		<%= radio_button_tag 'saida', 'impressao' %> Impressão
+		<%= radio_button_tag 'saida', 'tela', true %> Tela</br>
+		<%= radio_button_tag 'saida', 'impressao' %> Impressão </br>
+		<%= radio_button_tag 'saida', 'planilha' %> Planilha
 	</div>
 	<%= submit_tag 'enviar'%>
 <% end %>

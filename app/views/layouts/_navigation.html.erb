@@ -3,7 +3,7 @@
     <div class="container">
 
     <ul class="nav">  
-        <a class="brand" target="_blank" href="http://mrhgestao.com.br">Mrh</a>  
+        <li class="dropdown" id="indicacoesmenu"><a class="brand" target="_blank" href="http://mrhgestao.com.br"><img src='/assets/LOGO.png'  height="62" width="52"></a></li>
         
         <% if user_signed_in? %>
           <li class="active"><a href="/">Home</a></li>  
@@ -30,14 +30,12 @@
               </ul>  
           </li>
           <% end %>
-          <% if can? :create, :all %>
-            <li class="dropdown" id="indicacoesmenu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<b class="caret"></b></a>
-              <ul class="dropdown-menu">  
-                    <li><a href="/relatorio/indicacoes_filtro">Indicações</a></li>  
-                </ul>  
-            </li>
-          <% end %>
+          <li class="dropdown" id="indicacoesmenu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<b class="caret"></b></a>
+            <ul class="dropdown-menu">  
+                  <li><a href="/relatorio/indicacoes_filtro">Indicações</a></li>  
+              </ul>  
+          </li>
         <% end %>
         <li><a href="#modal_sobre" data-toggle="modal" data-target="#myModal">Sobre</a></li>  
     </ul> 

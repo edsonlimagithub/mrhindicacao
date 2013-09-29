@@ -1,25 +1,45 @@
 <h1>Listing servicos</h1>
 
-<table>
+<table id="table" class="table table-striped table-bordered">
+<thead>
   <tr>
     <th>Descricao</th>
     <th>Porcentagem</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Valor</th>
+    <th>Exibir</th>
+    <th>Alterar</th>
+    <th>Apagar</th>
   </tr>
-
-<% @servicos.each do |servico| %>
+</thead>
+<tbody><% @servicos.each do |servico| %>
   <tr>
     <td><%= servico.descricao %></td>
     <td><%= servico.porcentagem %></td>
+    <td><%= servico.comissao_valor %></td>
     <td><%= link_to 'Show', servico %></td>
     <td><%= link_to 'Alterar', edit_servico_path(servico) %></td>
     <td><%= link_to 'Apagar', servico, method: :delete, data: { confirm: 'Deseja realmente apagar?' } %></td>
   </tr>
 <% end %>
 </table>
+</tbody>
+
 
 <br />
 
 <%= link_to 'Novo Servico', new_servico_path %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#table').dataTable({
+      "oLanguage": {
+        "sLengthMenu": "_MENU_ registros por página",
+        "sZeroRecords": "Nenhum registro",
+        "sInfo": "Exibindo _START_ de _END_ total _TOTAL_ registros",
+        "sInfoEmpty": "Exibindo 0 de 0 de 0 registros",
+        "sInfoFiltered": "(filtered from _MAX_ total records)"
+      }
+    });
+  });
+
+</script>

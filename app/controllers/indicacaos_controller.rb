@@ -3,7 +3,7 @@ class IndicacaosController < ApplicationController
   # GET /indicacaos
   # GET /indicacaos.json
   def index
-    @indicacaos = Indicacao.find(:all, :conditions => ["concluida isnull"])
+    @indicacaos = Indicacao.find(:all, :conditions => ["concluida is not true"])
 
     respond_to do |format|
       format.html # index.html.erb

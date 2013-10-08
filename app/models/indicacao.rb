@@ -1,7 +1,7 @@
 #coding: utf-8
 class Indicacao < ActiveRecord::Base
 
-  attr_accessible :cliente_id, :data, :detalhes, :servico_id, :usuario_id, :concluida
+  attr_accessible :cliente_id, :data, :detalhes, :servico_id, :usuario_id, :concluida, :valor_fechamento, :valor_comissao
   belongs_to :user
   belongs_to :cliente
   belongs_to :servico

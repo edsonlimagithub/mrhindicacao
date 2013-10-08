@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :data %><br />
-    <%= date_select_br f %>
+    <%= date_select_br f, :created_at %>
   </div>
   <div class="field">
     <%= f.label :cliente_id %><br />
@@ -34,8 +34,16 @@
   <% if current_user.role.descricao == 'administrador' %>
     <div class="field">
       <%= f.label :concluida %>
-      <%= f.check_box :concluida, :label => 'Conclída' %>
+      <%= f.check_box :concluida, :label => 'Concluída' %>
     </div>    
+    <div class="field">
+      <%= f.label :valor_fechamento %>
+      <%= f.text_field :valor_fechamento, :label => 'valor fechamento' %>
+    </div>
+     <div class="field">
+      <%= f.label :valor_comissao %>
+      <%= f.text_field :valor_comissao, :label => 'valor comissao', :value => f.object.servico.comissao_valor? f.servico.comissao_valor : "" %>
+    </div>      
   <% end %>
 
 

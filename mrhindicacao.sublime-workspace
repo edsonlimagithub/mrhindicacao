@@ -251,23 +251,15 @@
 			"file": "app/views/indicacaos/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1532,
+				"buffer_size": 1604,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/indicacaos/_form.html.erb",
+			"file": "app/helpers/indicacaos_helper.rb",
 			"settings":
 			{
-				"buffer_size": 2266,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/indicacao.rb",
-			"settings":
-			{
-				"buffer_size": 443,
+				"buffer_size": 136,
 				"line_ending": "Unix"
 			}
 		},
@@ -275,7 +267,34 @@
 			"file": "app/controllers/indicacaos_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2488,
+				"buffer_size": 2493,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<%= form_for(@indicacao) do |f| %>\n  <% if @indicacao.errors.any? %>\n    <div id=\"error_explanation\">\n      <h2><%= pluralize(@indicacao.errors.count, \"error\") %> prohibited this indicacao from being saved:</h2>\n\n      <ul>\n      <% @indicacao.errors.full_messages.each do |msg| %>\n        <li><%= msg %></li>\n      <% end %>\n      </ul>\n    </div>\n  <% end %>\n\n  <div class=\"field\">\n    <%= f.label :data %><br />\n    <%= date_select_br f, :created_at %>\n  </div>\n  <div class=\"field\">\n    <%= f.label :cliente_id %><br />\n    <%= f.text_field :cliente_id %>\n    <input type='text' id='cliente_nome' disabled='disabled'>\n    <a data-toggle=\"modal\" data-remote=\"/cliente/index_modal\" data-target=\"#modalPesquisa\" >Pesquisar</a>\n    <a data-toggle=\"modal\" data-remote=\"/cliente/novo_modal\" data-target=\"#modalNovo\" >Novo cliente</a>\n  </div>\n  <div class=\"field\">\n    <%= f.label :servico_id %><br />\n    <%= f.select :servico_id, Servico.all.collect{|s| [s.descricao, s.id]} %>\n  </div>\n  <div class=\"field\">\n    <%= f.label :detalhes %><br />\n    <%= f.text_area :detalhes, :style => \"width: 458px; height: 139px;\"%>\n  </div>\n\n  <% if current_user.role.descricao == 'administrador' %>\n    <div class=\"field\">\n      <%= f.label :concluida %>\n      <%= f.check_box :concluida, :label => 'Concluída' %>\n    </div>    \n    <div class=\"field\">\n      <%= f.label :valor_fechamento %>\n      <%= f.text_field :valor_fechamento, :label => 'valor fechamento' %>\n    </div>\n     <div class=\"field\">\n      <%= f.label :valor_comissao %>\n      <%= f.text_field :valor_comissao, :label => 'valor comissao', :value => f.servico.comissao_valor? f.servico.comissao_valor : \"\" %>\n    </div>      \n  <% end %>\n\n\n  <div class=\"actions\">\n    <%= f.submit %>\n  </div>\n<% end %>\n\n\n\n <!-- Modal -->\n  <div class=\"modal fade\" id=\"modalPesquisa\">\n    <div class=\"modal-dialog\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n        </div>\n        <div class=\"modal-body\">\n          \n        </div>\n       \n      </div><!-- /.modal-content -->\n    </div><!-- /.modal-dialog -->\n  </div><!-- /.modal -->\n\n  <!-- Modal -->\n  <div class=\"modal fade\" id=\"modalNovo\">\n    <div class=\"modal-dialog\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n        </div>\n        <div class=\"modal-body\">\n          \n        </div>\n       \n      </div><!-- /.modal-content -->\n    </div><!-- /.modal-dialog -->\n  </div><!-- /.modal -->\n",
+			"file": "app/views/indicacaos/_form.html.erb",
+			"file_size": 2652,
+			"file_write_time": 1381198386000000,
+			"settings":
+			{
+				"buffer_size": 2644,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/application_helper.rb",
+			"settings":
+			{
+				"buffer_size": 312,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/indicacao.rb",
+			"settings":
+			{
+				"buffer_size": 479,
 				"line_ending": "Unix"
 			}
 		}
@@ -352,10 +371,20 @@
 	},
 	"file_history":
 	[
-		"/home/edsonlima/projetos/mrhindicacao/Gemfile",
+		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20131008015630_add_column_valor_fechamento_to_indicacao.rb",
+		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20131008020245_add_column_valor_comissaoto_to_indicacao.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/helpers/relatorio_helper.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/helpers/application_helper.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/helpers/indicacaos_helper.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/helpers/servicos_helper.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/_form.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/indicacao.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/show.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/new.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/indicacaos_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/edit.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/servico.rb",
+		"/home/edsonlima/projetos/mrhindicacao/Gemfile",
+		"/home/edsonlima/projetos/mrhindicacao/app/helpers/indicacaos_helper.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/edit.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/ability.rb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130929131857_add_column_concluida_to_indicacoes.rb",
@@ -363,11 +392,9 @@
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/development.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/mailers/email.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/index.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/controllers/indicacaos_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/email/indicacao.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/email/nova_indicacao.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/production.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/servico.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/_navigation.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/index.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/setors/index.html.erb",
@@ -375,7 +402,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/_form.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/servicos_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/relatorios_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/indicacao.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/locales/devise.en.yml",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/_form.html.erb",
@@ -395,9 +421,7 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorio/indicacoes_filtro.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/_form.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/user_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/edit.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/edit.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130902235832_add_email_to_servico.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/setor.rb",
@@ -474,12 +498,7 @@
 		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130719125229_add_observacao_to_ativacao_historico_status.rb",
 		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130718142711_rename_status_to_status_dsf_id_to_ativacao_historico_status.rb",
 		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130718134631_add_auditoria_id_to_ativacao_historico_statuses.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/auditorias/new.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/questionarios/perguntas_respostas_filtro.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130717151237_add_emauditiria_to_ativacao_auditadas.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130718130417_rename_ativacao_id_to_ativacao_aditada_id.rb",
-		"/home/edsonlima/projetos/dsmmanager/lib/auditoria/valida_ativacoes.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130716195346_add_ativacao_auditada_and_aditorias.rb"
+		"/home/edsonlima/projetos/dsmmanager/app/views/auditorias/new.html.erb"
 	],
 	"find":
 	{
@@ -575,7 +594,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -645,8 +664,8 @@
 						"selection":
 						[
 							[
-								1114,
-								1114
+								877,
+								877
 							]
 						],
 						"settings":
@@ -655,7 +674,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 306.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -692,15 +711,15 @@
 					"file": "app/views/indicacaos/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 1532,
+						"buffer_size": 1604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								838,
-								838
+								697,
+								697
 							]
 						],
 						"settings":
@@ -717,46 +736,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/indicacaos/_form.html.erb",
+					"file": "app/helpers/indicacaos_helper.rb",
 					"settings":
 					{
-						"buffer_size": 2266,
+						"buffer_size": 136,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1281,
-								1281
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/models/indicacao.rb",
-					"settings":
-					{
-						"buffer_size": 443,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								138,
-								138
+								119,
+								119
 							]
 						],
 						"settings":
@@ -770,19 +761,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "app/controllers/indicacaos_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2488,
+						"buffer_size": 2493,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								189,
+								189
 							]
 						],
 						"settings":
@@ -790,6 +781,86 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/indicacaos/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 2644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1605,
+								1605
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 128.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/helpers/application_helper.rb",
+					"settings":
+					{
+						"buffer_size": 312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								302,
+								302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/models/indicacao.rb",
+					"settings":
+					{
+						"buffer_size": 479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -846,12 +917,48 @@
 		"selected_items":
 		[
 			[
-				"indicacoes",
-				"app/views/relatorios/indicacoes.html.erb"
+				"indicacao",
+				"app/models/indicacao.rb"
+			],
+			[
+				"appl",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"indicacao/fo",
+				"app/views/indicacaos/_form.html.erb"
+			],
+			[
+				"indicacaos/f",
+				"app/views/indicacaos/_form.html.erb"
 			],
 			[
 				"indicacaos",
 				"app/controllers/indicacaos_controller.rb"
+			],
+			[
+				"indicacaos/in",
+				"app/views/indicacaos/index.html.erb"
+			],
+			[
+				"indicacaos/",
+				"app/views/indicacaos/new.html.erb"
+			],
+			[
+				"clientes",
+				"app/views/clientes/show.html.erb"
+			],
+			[
+				"servicos/ed",
+				"app/views/servicos/edit.html.erb"
+			],
+			[
+				"servi",
+				"app/models/servico.rb"
+			],
+			[
+				"indicacoes",
+				"app/views/relatorios/indicacoes.html.erb"
 			],
 			[
 				"indicacao.rb",
@@ -860,10 +967,6 @@
 			[
 				"indicacao/",
 				"app/views/indicacaos/_form.html.erb"
-			],
-			[
-				"indicacaos/in",
-				"app/views/indicacaos/index.html.erb"
 			],
 			[
 				"gem",
@@ -876,10 +979,6 @@
 			[
 				"indicao",
 				"app/helpers/indicacaos_helper.rb"
-			],
-			[
-				"indicacaos/",
-				"app/views/indicacaos/_form.html.erb"
 			],
 			[
 				"indicacaos/ed",
@@ -1134,10 +1233,6 @@
 				"app/controllers/indicacaos_controller.rb"
 			],
 			[
-				"servi",
-				"app/controllers/servicos_controller.rb"
-			],
-			[
 				"inde",
 				"app/views/application/index.html.erb"
 			],
@@ -1332,30 +1427,6 @@
 			[
 				"ativacao_au",
 				"app/models/ativacao_auditada.rb"
-			],
-			[
-				"auditorias/",
-				"app/views/auditorias/new.html.erb"
-			],
-			[
-				"perguntas",
-				"app/views/questionarios/perguntas_respostas_filtro.html.erb"
-			],
-			[
-				"auditorias/new",
-				"app/views/auditorias/new.html.erb"
-			],
-			[
-				"auditar",
-				"app/views/ativacaos/auditar_linhas.html.erb"
-			],
-			[
-				"ativacoes",
-				"lib/ativacoes_module.rb"
-			],
-			[
-				"periodo",
-				"app/views/auditorias/periodo_relatorio.html.erb"
 			]
 		],
 		"width": 0.0

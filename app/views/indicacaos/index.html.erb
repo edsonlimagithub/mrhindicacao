@@ -6,6 +6,7 @@
     <tr>
       <th><i class="icon-share-alt"></i></th>
       <th>Data</th>
+      <th>Dias</th>
       <th>Usuario</th>
       <th>Cliente</th>
       <th>Servico</th>
@@ -19,7 +20,8 @@
   <% @indicacaos.each do |indicacao| %>
     <tr>
       <td><%= check_box_tag "indicacoes[#{indicacao.id}]"%></td>
-      <td><%= indicacao.data.strftime("%d/%m/%Y") %></td>
+      <td><%= indicacao.created_at.strftime("%d/%m/%Y") %></td>
+      <td><%= dias_corridos indicacao %></td>
       <td><%= indicacao.user.nome %></td>
       <td><%= indicacao.cliente.nome %></td>
       <td><%= indicacao.servico.descricao %></td>

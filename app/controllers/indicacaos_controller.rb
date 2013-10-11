@@ -3,7 +3,7 @@ class IndicacaosController < ApplicationController
   # GET /indicacaos
   # GET /indicacaos.json
   def index
-    @indicacaos = Indicacao.find(:all, :conditions => ["concluida is not true"])
+    @indicacaos = Indicacao.find(:all, :conditions => ["concluida IS NOT TRUE AND cancelado IS NOT TRUE"])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -44,6 +44,16 @@ class IndicacaosController < ApplicationController
   def create
     @indicacao = Indicacao.new(params[:indicacao])
     @indicacao.user = current_user
+
+    if params[:concluida][:concluida] == 'cancelado'
+      @indicacao.cancelado = 'true'
+      @indicacao.concluida = nil
+    end
+    if params[:concluida][:concluida] == 'concluida'
+      @indicacao.concluida = 'true'
+      @indicacao.cancelado = nil
+    end
+
     respond_to do |format|
       if @indicacao.save
         Email.nova_indicacao(@indicacao.servico.email, @indicacao).deliver
@@ -60,6 +70,14 @@ class IndicacaosController < ApplicationController
   # PUT /indicacaos/1.json
   def update
     @indicacao = Indicacao.find(params[:id])
+    if params[:concluida][:concluida] == 'cancelado'
+      params[:indicacao][:cancelado] = 'true'
+      params[:indicacao][:concluida] = nil
+    end
+    if params[:concluida][:concluida] == 'concluida'
+      params[:indicacao][:concluida] = 'true'
+      params[:indicacao][:cancelado] = nil
+    end
 
     respond_to do |format|
       if @indicacao.update_attributes(params[:indicacao])

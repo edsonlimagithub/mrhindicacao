@@ -22,12 +22,16 @@
 	<tbody>
 
 <% @indicacoes.each do |indicacao| %>
+<% cliente = Cliente.find indicacao[:cliente_id]%>
 	<tr>
 		<td>
 			<%= indicacao.created_at.strftime("%d/%m/%Y") %>
 		</td>
 		<td>
-			<%= indicacao.cliente.nome %>
+			<a href="#" data-toggle="tooltip" 
+				title="Fone: <%= cliente.telefone %> / Contato: <%= cliente.contato %>">
+				<%= indicacao.cliente.nome %>
+			</a>
 		</td>
 		<td>
 			<%= indicacao.user.nome %>
@@ -36,7 +40,8 @@
 			<%= indicacao.servico.descricao %>
 		</td>
 		<td>
-			<%= (indicacao.concluida)? 'Concluida' : 'Aberta' %>
+			<%= (indicacao.concluida)? 'Concluida' : (indicacao.cancelado)? 'Cancelada' : 'Aberta' %>
+			<%=  %>
 		</td>
 	</tr>
 <% end %>

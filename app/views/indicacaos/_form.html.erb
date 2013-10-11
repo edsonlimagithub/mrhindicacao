@@ -17,8 +17,9 @@
   </div>
   <div class="field">
     <%= f.label :cliente_id %><br />
-    <%= f.text_field :cliente_id %>
-    <input type='text' id='cliente_nome' disabled='disabled'>
+    <%= f.text_field :cliente_id, :disabled => true %>
+    <input type='text' id='cliente_nome' disabled='disabled' 
+      value='<%= f.object.cliente_id ? (Cliente.find f.object.cliente_id).nome : ""%>' >
     <a data-toggle="modal" data-remote="/cliente/index_modal" data-target="#modalPesquisa" >Pesquisar</a>
     <a data-toggle="modal" data-remote="/cliente/novo_modal" data-target="#modalNovo" >Novo cliente</a>
   </div>
@@ -34,7 +35,8 @@
   <% if current_user.role.descricao == 'administrador' %>
     <div class="field">
       <%= f.label :concluida %>
-      <%= f.check_box :concluida, :label => 'Concluída' %>
+      <%= radio_button :concluida, 'concluida', 'concluida'  %>Fechada com proposta </br>
+      <%= radio_button :concluida, 'concluida', 'cancelado'  %>Cancelada
     </div>    
     <div class="field">
       <%= f.label :valor_fechamento %>
@@ -42,7 +44,7 @@
     </div>
      <div class="field">
       <%= f.label :valor_comissao %>
-      <%= f.text_field :valor_comissao, :label => 'valor comissao', :value => f.object.servico.comissao_valor? f.servico.comissao_valor : "" %>
+      <%= f.text_field :valor_comissao, :label => 'valor comissao' %>
     </div>      
   <% end %>
 
@@ -83,3 +85,19 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+<script type='text/javascript'>
+  $(function(){
+    $("#indicacao_servico_id").bind('change', valor_comissao(this))
+  });
+
+  var valor_comissao = function(elemento){
+    
+  }
+
+  var retorna_valor_comissao = function(servico_id){
+    $.get('/servico/retorna_valor_comissao/' + servico_id,
+      return function(retorno);
+    );
+  }
+  </script>

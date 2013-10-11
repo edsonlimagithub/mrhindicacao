@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131008020245) do
+ActiveRecord::Schema.define(:version => 20131011120740) do
 
   create_table "clientes", :force => true do |t|
     t.string   "nome"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20131008020245) do
     t.boolean  "concluida"
     t.float    "valor_fechamento"
     t.float    "valor_comissao"
+    t.boolean  "cancelado"
   end
 
   create_table "roles", :force => true do |t|

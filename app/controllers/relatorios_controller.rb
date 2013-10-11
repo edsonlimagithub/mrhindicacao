@@ -21,9 +21,11 @@ class RelatoriosController < ApplicationController
 		select_status = ''
 		if params[:status] != 'todos'
 			if params[:status] == 'abertas'
-				select_status = 'AND concluida isnull'
-			else
+				select_status = 'AND concluida isnull AND cancelado isnull'
+			elsif params[:status] == 'concluidas'
 				select_status = 'AND concluida = true'
+			else
+				select_status = 'AND cancelado = true'
 			end
 				
 		end

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"valor",
+				"valor_comissao"
+			],
+			[
+				"servico",
+				"servico_id"
+			],
+			[
 				"indicacoes",
 				"indicacoes_filtro"
 			],
@@ -148,10 +156,6 @@
 				"planilhaPedidoUltimaAtualizacao"
 			],
 			[
-				"valor",
-				"valorNaoAtendidos"
-			],
-			[
 				"Produt",
 				"produtoPedidoItem"
 			],
@@ -272,13 +276,10 @@
 			}
 		},
 		{
-			"contents": "<%= form_for(@indicacao) do |f| %>\n  <% if @indicacao.errors.any? %>\n    <div id=\"error_explanation\">\n      <h2><%= pluralize(@indicacao.errors.count, \"error\") %> prohibited this indicacao from being saved:</h2>\n\n      <ul>\n      <% @indicacao.errors.full_messages.each do |msg| %>\n        <li><%= msg %></li>\n      <% end %>\n      </ul>\n    </div>\n  <% end %>\n\n  <div class=\"field\">\n    <%= f.label :data %><br />\n    <%= date_select_br f, :created_at %>\n  </div>\n  <div class=\"field\">\n    <%= f.label :cliente_id %><br />\n    <%= f.text_field :cliente_id %>\n    <input type='text' id='cliente_nome' disabled='disabled'>\n    <a data-toggle=\"modal\" data-remote=\"/cliente/index_modal\" data-target=\"#modalPesquisa\" >Pesquisar</a>\n    <a data-toggle=\"modal\" data-remote=\"/cliente/novo_modal\" data-target=\"#modalNovo\" >Novo cliente</a>\n  </div>\n  <div class=\"field\">\n    <%= f.label :servico_id %><br />\n    <%= f.select :servico_id, Servico.all.collect{|s| [s.descricao, s.id]} %>\n  </div>\n  <div class=\"field\">\n    <%= f.label :detalhes %><br />\n    <%= f.text_area :detalhes, :style => \"width: 458px; height: 139px;\"%>\n  </div>\n\n  <% if current_user.role.descricao == 'administrador' %>\n    <div class=\"field\">\n      <%= f.label :concluida %>\n      <%= f.check_box :concluida, :label => 'Concluída' %>\n    </div>    \n    <div class=\"field\">\n      <%= f.label :valor_fechamento %>\n      <%= f.text_field :valor_fechamento, :label => 'valor fechamento' %>\n    </div>\n     <div class=\"field\">\n      <%= f.label :valor_comissao %>\n      <%= f.text_field :valor_comissao, :label => 'valor comissao', :value => f.servico.comissao_valor? f.servico.comissao_valor : \"\" %>\n    </div>      \n  <% end %>\n\n\n  <div class=\"actions\">\n    <%= f.submit %>\n  </div>\n<% end %>\n\n\n\n <!-- Modal -->\n  <div class=\"modal fade\" id=\"modalPesquisa\">\n    <div class=\"modal-dialog\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n        </div>\n        <div class=\"modal-body\">\n          \n        </div>\n       \n      </div><!-- /.modal-content -->\n    </div><!-- /.modal-dialog -->\n  </div><!-- /.modal -->\n\n  <!-- Modal -->\n  <div class=\"modal fade\" id=\"modalNovo\">\n    <div class=\"modal-dialog\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n        </div>\n        <div class=\"modal-body\">\n          \n        </div>\n       \n      </div><!-- /.modal-content -->\n    </div><!-- /.modal-dialog -->\n  </div><!-- /.modal -->\n",
 			"file": "app/views/indicacaos/_form.html.erb",
-			"file_size": 2652,
-			"file_write_time": 1381198386000000,
 			"settings":
 			{
-				"buffer_size": 2644,
+				"buffer_size": 2920,
 				"line_ending": "Unix"
 			}
 		},
@@ -594,7 +595,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -793,15 +794,15 @@
 					"file": "app/views/indicacaos/_form.html.erb",
 					"settings":
 					{
-						"buffer_size": 2644,
+						"buffer_size": 2920,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1605,
-								1605
+								2457,
+								2457
 							]
 						],
 						"settings":
@@ -811,7 +812,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 128.0,
+						"translation.y": 1037.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

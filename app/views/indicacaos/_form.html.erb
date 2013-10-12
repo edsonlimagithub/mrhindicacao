@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :cliente_id %><br />
-    <%= f.text_field :cliente_id, :disabled => true %>
+    <%= f.text_field :cliente_id %>
     <input type='text' id='cliente_nome' disabled='disabled' 
       value='<%= f.object.cliente_id ? (Cliente.find f.object.cliente_id).nome : ""%>' >
     <a data-toggle="modal" data-remote="/cliente/index_modal" data-target="#modalPesquisa" >Pesquisar</a>

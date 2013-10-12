@@ -2,29 +2,25 @@
 
 <p>
   <b>Data:</b>
-  <%= @indicacao.data %>
+  <%= @indicacao.created_at.strftime("%d/%m/%Y") %>
 </p>
 
 <p>
   <b>Usuario:</b>
-  <%= @indicacao.user_id %>
+  <%= @indicacao.user.nome %>
 </p>
 
 <p>
   <b>Cliente:</b>
-  <%= @indicacao.cliente_id %>
+  <%= @indicacao.cliente.nome %>
 </p>
 
 <p>
   <b>Servico:</b>
-  <%= @indicacao.servico_id %>
+  <%= @indicacao.servico.descricao %>
 </p>
 
 <p>
   <b>Detalhes:</b>
   <%= @indicacao.detalhes %>
 </p>
-
-
-<%= link_to 'Edit', edit_indicacao_path(@indicacao) %> |
-<%= link_to 'Back', indicacaos_path %>

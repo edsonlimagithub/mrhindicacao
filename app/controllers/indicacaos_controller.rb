@@ -45,13 +45,15 @@ class IndicacaosController < ApplicationController
     @indicacao = Indicacao.new(params[:indicacao])
     @indicacao.user = current_user
 
-    if params[:concluida][:concluida] == 'cancelado'
-      @indicacao.cancelado = 'true'
-      @indicacao.concluida = nil
-    end
-    if params[:concluida][:concluida] == 'concluida'
-      @indicacao.concluida = 'true'
-      @indicacao.cancelado = nil
+    if params[:concluida]
+      if params[:concluida][:concluida] == 'cancelado'
+        @indicacao.cancelado = 'true'
+        @indicacao.concluida = nil
+      end
+      if params[:concluida][:concluida] == 'concluida'
+        @indicacao.concluida = 'true'
+        @indicacao.cancelado = nil
+      end
     end
 
     respond_to do |format|

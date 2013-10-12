@@ -19,9 +19,13 @@
     <%= f.label :cliente_id %><br />
     <%= f.text_field :cliente_id %>
     <input type='text' id='cliente_nome' disabled='disabled' 
-      value='<%= f.object.cliente_id ? (Cliente.find f.object.cliente_id).nome : ""%>' >
-    <a data-toggle="modal" data-remote="/cliente/index_modal" data-target="#modalPesquisa" >Pesquisar</a>
-    <a data-toggle="modal" data-remote="/cliente/novo_modal" data-target="#modalNovo" >Novo cliente</a>
+      value='<%= f.object.cliente_id ? (Cliente.find f.object.cliente_id).nome : ""%>' ><br>
+    <a data-toggle="modal" data-remote="/cliente/index_modal" data-target="#modalPesquisa" >
+      <button class='btn'>Pesquisar cliente</button>
+    </a>
+    <a data-toggle="modal" data-remote="/cliente/novo_modal" data-target="#modalNovo" >
+      <button class='btn'>Novo cliente</button>
+    </a>
   </div>
   <div class="field">
     <%= f.label :servico_id %><br />

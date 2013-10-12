@@ -1,4 +1,5 @@
 class ClientesController < ApplicationController
+  #load_and_authorize_resource
   # GET /clientes
   # GET /clientes.json
   def index

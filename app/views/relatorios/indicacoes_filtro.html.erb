@@ -8,11 +8,7 @@
 	</div>
 	<div>
 		Usuário</br>
-		<% if current_user.role.descricao == 'administrador' %>
-			<%= select_tag 'user_id', options_from_collection_for_select(User.all, "id", "nome"), :prompt => 'todos' %>
-		<% else %>
-			<%= select_tag 'user_id', options_for_select([[current_user.nome, current_user.id]]) %>
-		<% end %>
+		<%= select_tag 'user_id', options_from_collection_for_select(User.all, "id", "nome"), :prompt => 'todos' %>
 	</div>
 	<div>
 		Serviço</br>

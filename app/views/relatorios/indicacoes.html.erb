@@ -37,7 +37,10 @@
 			<%= indicacao.user.nome %>
 		</td>
 		<td>
-			<%= indicacao.servico.descricao %>
+			<a href="#" data-toggle="tooltip" 
+				title="Detalhes: <%= indicacao.detalhes %>">
+				<%= indicacao.servico.descricao %>
+			</a>
 		</td>
 		<td>
 			<%= (indicacao.concluida)? 'Concluida' : (indicacao.cancelado)? 'Cancelada' : 'Aberta' %>

@@ -17,6 +17,9 @@
 			<th>
 				Situação
 			</th>
+			<th>
+				Comissão Paga
+			</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -45,6 +48,9 @@
 		<td>
 			<%= (indicacao.concluida)? 'Concluida' : (indicacao.cancelado)? 'Cancelada' : 'Aberta' %>
 			<%=  %>
+		</td>
+		<td>
+			<%= indicacao.valor_comissao %>
 		</td>
 	</tr>
 <% end %>

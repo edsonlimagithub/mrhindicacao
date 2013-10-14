@@ -223,7 +223,7 @@
 			"file": "app/views/relatorios/indicacoes.html.erb",
 			"settings":
 			{
-				"buffer_size": 1274,
+				"buffer_size": 1370,
 				"line_ending": "Unix"
 			}
 		},
@@ -231,7 +231,7 @@
 			"file": "app/controllers/indicacaos_controller.rb",
 			"settings":
 			{
-				"buffer_size": 3081,
+				"buffer_size": 3131,
 				"line_ending": "Unix"
 			}
 		},
@@ -239,7 +239,7 @@
 			"file": "app/views/indicacaos/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 3132,
+				"buffer_size": 3207,
 				"line_ending": "Unix"
 			}
 		},
@@ -260,26 +260,58 @@
 			}
 		},
 		{
-			"file": "app/views/relatorios/indicacoes_filtro.html.erb",
+			"file": "app/models/ability.rb",
 			"settings":
 			{
-				"buffer_size": 1615,
+				"buffer_size": 369,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/user.rb",
+			"file": "app/views/layouts/_navigation.html.erb",
 			"settings":
 			{
-				"buffer_size": 573,
+				"buffer_size": 2226,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/user_controller.rb",
+			"file": "app/controllers/clientes_controller.rb",
 			"settings":
 			{
-				"buffer_size": 726,
+				"buffer_size": 2325,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/clientes/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/indicacaos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/servicos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/clientes/novo_modal.html.erb",
+			"settings":
+			{
+				"buffer_size": 1587,
 				"line_ending": "Unix"
 			}
 		}
@@ -356,11 +388,16 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes_filtro.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/user.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/user_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/_navigation.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/ability.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/email/nova_indicacao.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/show.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/helpers/indicacaos_helper.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/index.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/relatorios_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/_navigation.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes_filtro.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/helpers/application_helper.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/indicacao.rb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20131011120740_add_column_cancelada_to_indicacoes.rb",
@@ -376,13 +413,11 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/models/servico.rb",
 		"/home/edsonlima/projetos/mrhindicacao/Gemfile",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/edit.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/ability.rb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130929131857_add_column_concluida_to_indicacoes.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/development.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/mailers/email.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/email/indicacao.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/email/nova_indicacao.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/production.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/index.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/setors/index.html.erb",
@@ -394,7 +429,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/_form.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/devise/registrations/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/new.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/user.rb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130924222306_add_column_valor_comissao_to_servicos.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/email/indicacao.text.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/index.html.erb",
@@ -406,7 +440,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/Capfile",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorio/indicacoes_filtro.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/_form.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/controllers/user_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/edit.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130902235832_add_email_to_servico.rb",
@@ -422,7 +455,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/novo_modal.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130824151158_add_columns_to_servicos.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/javascripts/DT_bootstrap.js",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/show.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/role.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/new_modal.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/application/index.html.erb",
@@ -579,7 +611,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -587,15 +619,15 @@
 					"file": "app/views/relatorios/indicacoes.html.erb",
 					"settings":
 					{
-						"buffer_size": 1274,
+						"buffer_size": 1370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								252,
-								252
+								89,
+								89
 							]
 						],
 						"settings":
@@ -604,7 +636,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 163.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -614,15 +646,15 @@
 					"file": "app/controllers/indicacaos_controller.rb",
 					"settings":
 					{
-						"buffer_size": 3081,
+						"buffer_size": 3131,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2209,
-								2209
+								53,
+								53
 							]
 						],
 						"settings":
@@ -632,7 +664,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 825.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -642,15 +674,15 @@
 					"file": "app/views/indicacaos/_form.html.erb",
 					"settings":
 					{
-						"buffer_size": 3132,
+						"buffer_size": 3207,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								724,
-								724
+								1004,
+								1004
 							]
 						],
 						"settings":
@@ -660,7 +692,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 255.0,
+						"translation.y": 204.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -713,52 +745,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/relatorios/indicacoes_filtro.html.erb",
+					"file": "app/models/ability.rb",
 					"settings":
 					{
-						"buffer_size": 1615,
+						"buffer_size": 369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1019,
-								1019
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 102.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/models/user.rb",
-					"settings":
-					{
-						"buffer_size": 573,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								217,
+								217
 							]
 						],
 						"settings":
@@ -774,11 +779,151 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/controllers/user_controller.rb",
+					"buffer": 6,
+					"file": "app/views/layouts/_navigation.html.erb",
 					"settings":
 					{
-						"buffer_size": 726,
+						"buffer_size": 2226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1232,
+								1232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/clientes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/clientes/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/indicacaos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1593,
+								1593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 179.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/servicos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/clientes/novo_modal.html.erb",
+					"settings":
+					{
+						"buffer_size": 1587,
 						"regions":
 						{
 						},
@@ -791,7 +936,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -850,16 +995,64 @@
 		"selected_items":
 		[
 			[
+				"modal",
+				"app/views/clientes/novo_modal.html.erb"
+			],
+			[
+				"cliente",
+				"app/controllers/clientes_controller.rb"
+			],
+			[
 				"indica",
-				"app/models/indicacao.rb"
+				"app/controllers/indicacaos_controller.rb"
+			],
+			[
+				"relatorio",
+				"app/controllers/relatorios_controller.rb"
+			],
+			[
+				"indicacaos/f",
+				"app/views/indicacaos/_form.html.erb"
+			],
+			[
+				"servicos/in",
+				"app/views/servicos/index.html.erb"
+			],
+			[
+				"indicaoe",
+				"app/views/relatorios/indicacoes.html.erb"
+			],
+			[
+				"indicaos/in",
+				"app/views/indicacaos/index.html.erb"
+			],
+			[
+				"clientes/",
+				"app/views/clientes/index.html.erb"
+			],
+			[
+				"nave",
+				"app/views/layouts/_navigation.html.erb"
+			],
+			[
+				"abili",
+				"app/models/ability.rb"
+			],
+			[
+				"indicacaos/s",
+				"app/views/indicacaos/show.html.erb"
+			],
+			[
+				"email",
+				"app/views/email/nova_indicacao.html.erb"
+			],
+			[
+				"indicacoes",
+				"app/views/relatorios/indicacoes_filtro.html.erb"
 			],
 			[
 				"user",
 				"app/controllers/user_controller.rb"
-			],
-			[
-				"relatorio",
-				"app/views/relatorios/indicacoes_filtro.html.erb"
 			],
 			[
 				"relato",
@@ -875,10 +1068,6 @@
 			],
 			[
 				"indicacao/fo",
-				"app/views/indicacaos/_form.html.erb"
-			],
-			[
-				"indicacaos/f",
 				"app/views/indicacaos/_form.html.erb"
 			],
 			[
@@ -906,10 +1095,6 @@
 				"app/models/servico.rb"
 			],
 			[
-				"indicacoes",
-				"app/views/relatorios/indicacoes.html.erb"
-			],
-			[
 				"indicacao.rb",
 				"app/models/indicacao.rb"
 			],
@@ -934,20 +1119,8 @@
 				"app/views/indicacaos/edit.html.erb"
 			],
 			[
-				"abili",
-				"app/models/ability.rb"
-			],
-			[
-				"nave",
-				"app/views/layouts/_navigation.html.erb"
-			],
-			[
 				"relatorios/",
 				"app/views/relatorios/indicacoes_filtro.html.erb"
-			],
-			[
-				"servicos/in",
-				"app/views/servicos/index.html.erb"
 			],
 			[
 				"setors/in",
@@ -964,10 +1137,6 @@
 			[
 				"servico",
 				"app/models/servico.rb"
-			],
-			[
-				"email",
-				"app/mailers/email.rb"
 			],
 			[
 				"indicacao_con",
@@ -1042,10 +1211,6 @@
 				"app/views/user/index.html.erb"
 			],
 			[
-				"clientes/",
-				"app/views/clientes/_form.html.erb"
-			],
-			[
 				"servico.rb",
 				"app/models/servico.rb"
 			],
@@ -1102,10 +1267,6 @@
 				"app/mailers/email.rb"
 			],
 			[
-				"modal",
-				"app/views/clientes/index_modal.html.erb"
-			],
-			[
 				"mod",
 				"app/views/clientes/index_modal.html.erb"
 			],
@@ -1128,10 +1289,6 @@
 			[
 				"indicacao/new",
 				"app/views/indicacaos/new.html.erb"
-			],
-			[
-				"cliente",
-				"app/controllers/clientes_controller.rb"
 			],
 			[
 				"indicacao_co",
@@ -1348,18 +1505,6 @@
 			[
 				"statu",
 				"app/models/status_dsf.rb"
-			],
-			[
-				"ativacaohi",
-				"app/models/ativacao_historico_status.rb"
-			],
-			[
-				"ativacao_hi",
-				"app/models/ativacao_historico_status.rb"
-			],
-			[
-				"ativacao_au",
-				"app/models/ativacao_auditada.rb"
 			]
 		],
 		"width": 0.0

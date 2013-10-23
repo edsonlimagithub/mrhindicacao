@@ -52,6 +52,10 @@
     </div>      
   <% end %>
 
+  <div class="field">
+    <%= check_box_tag 'enviar_email', 'true', :seleted => true %>
+    Enviar email para responsável do serviço.
+  </div>
 
   <div class="actions">
     <%= f.submit %>

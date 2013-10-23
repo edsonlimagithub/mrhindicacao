@@ -223,7 +223,7 @@
 			"file": "app/views/relatorios/indicacoes.html.erb",
 			"settings":
 			{
-				"buffer_size": 1370,
+				"buffer_size": 1455,
 				"line_ending": "Unix"
 			}
 		},
@@ -256,30 +256,6 @@
 			"settings":
 			{
 				"buffer_size": 1894,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/ability.rb",
-			"settings":
-			{
-				"buffer_size": 369,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/_navigation.html.erb",
-			"settings":
-			{
-				"buffer_size": 2226,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/clientes_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2325,
 				"line_ending": "Unix"
 			}
 		},
@@ -388,11 +364,12 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/clientes_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/_navigation.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/ability.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes_filtro.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/user.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/user_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/_navigation.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/ability.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/email/nova_indicacao.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/show.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/helpers/indicacaos_helper.rb",
@@ -451,7 +428,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/index_modal.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environment.rb",
 		"/home/edsonlima/projetos/mrhindicacao/test/functional/indicacaos_controller_test.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/controllers/clientes_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/novo_modal.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130824151158_add_columns_to_servicos.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/javascripts/DT_bootstrap.js",
@@ -611,7 +587,7 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -619,15 +595,15 @@
 					"file": "app/views/relatorios/indicacoes.html.erb",
 					"settings":
 					{
-						"buffer_size": 1370,
+						"buffer_size": 1455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								89,
-								89
+								969,
+								969
 							]
 						],
 						"settings":
@@ -636,7 +612,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -745,97 +721,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "app/models/ability.rb",
-					"settings":
-					{
-						"buffer_size": 369,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								217,
-								217
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/layouts/_navigation.html.erb",
-					"settings":
-					{
-						"buffer_size": 2226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1232,
-								1232
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/controllers/clientes_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2325,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								52,
-								52
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "app/views/clientes/index.html.erb",
 					"settings":
 					{
@@ -853,7 +745,7 @@
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -863,7 +755,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
 					"file": "app/views/indicacaos/index.html.erb",
 					"settings":
 					{
@@ -874,8 +766,8 @@
 						"selection":
 						[
 							[
-								1593,
-								1593
+								390,
+								390
 							]
 						],
 						"settings":
@@ -885,13 +777,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 179.0,
+						"translation.y": 77.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 7,
 					"file": "app/views/servicos/index.html.erb",
 					"settings":
 					{
@@ -919,7 +811,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 8,
 					"file": "app/views/clientes/novo_modal.html.erb",
 					"settings":
 					{

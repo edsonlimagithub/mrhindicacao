@@ -58,7 +58,9 @@ class IndicacaosController < ApplicationController
 
     respond_to do |format|
       if @indicacao.save
-        Email.nova_indicacao(@indicacao.servico.email, @indicacao).deliver
+        if params[:enviar_email]
+          Email.nova_indicacao(@indicacao.servico.email, @indicacao).deliver
+        end
         format.html { redirect_to @indicacao, notice: 'Indicacao criada com sucesso.' }
         format.json { render json: @indicacao, status: :created, location: @indicacao }
       else

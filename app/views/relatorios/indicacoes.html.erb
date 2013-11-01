@@ -33,7 +33,7 @@
 		<td>
 			<a href="#" data-toggle="tooltip" 
 				title="Fone: <%= cliente.telefone %> / Contato: <%= cliente.contato %>">
-				<%= indicacao.cliente.nome %>
+				<%= indicacao.cliente.nome ? indicacao.cliente.nome : 'vazio'  %>
 			</a>
 		</td>
 		<td>

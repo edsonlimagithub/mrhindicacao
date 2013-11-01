@@ -23,7 +23,7 @@
       <td><%= indicacao.created_at.strftime("%d/%m/%Y") %></td>
       <td><%= dias_corridos indicacao %></td>
       <td><%= indicacao.user.nome %></td>
-      <td><%= indicacao.cliente.nome %></td>
+      <td><%= indicacao.cliente ? indicacao.cliente.nome : 'vazio'%></td>
       <td><%= indicacao.servico.descricao %></td>
       <td><%= indicacao.detalhes %></td>
       <td><%= link_to 'Show', indicacao %></td>

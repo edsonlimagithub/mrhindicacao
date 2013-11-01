@@ -1,3 +1,4 @@
+#coding: utf-8
 class ClientesController < ApplicationController
   #load_and_authorize_resource
   # GET /clientes
@@ -90,7 +91,11 @@ class ClientesController < ApplicationController
   # DELETE /clientes/1.json
   def destroy
     @cliente = Cliente.find(params[:id])
-    @cliente.destroy
+    begin
+      @cliente.destroy
+    rescue ActiveRecord::DeleteRestrictionError => e
+      flash[:error] = 'Cliente não pode ser excluído. Existem indicaçãoes para ele'
+    end
 
     respond_to do |format|
       format.html { redirect_to clientes_url }

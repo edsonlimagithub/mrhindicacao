@@ -223,7 +223,15 @@
 			"file": "app/views/relatorios/indicacoes.html.erb",
 			"settings":
 			{
-				"buffer_size": 1455,
+				"buffer_size": 1495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mrhindicacao.sublime-project",
+			"settings":
+			{
+				"buffer_size": 81,
 				"line_ending": "Unix"
 			}
 		},
@@ -255,15 +263,7 @@
 			"file": "app/models/cliente.rb",
 			"settings":
 			{
-				"buffer_size": 448,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/servico.rb",
-			"settings":
-			{
-				"buffer_size": 214,
+				"buffer_size": 245,
 				"line_ending": "Unix"
 			}
 		},
@@ -272,6 +272,38 @@
 			"settings":
 			{
 				"buffer_size": 507,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/clientes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2497,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/indicacaos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/mailers/email.rb",
+			"settings":
+			{
+				"buffer_size": 484,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/environments/development.rb",
+			"settings":
+			{
+				"buffer_size": 2127,
 				"line_ending": "Unix"
 			}
 		}
@@ -348,6 +380,8 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/servicos_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/models/servico.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/clientes_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/indicacao.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/relatorios_controller.rb",
@@ -374,7 +408,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/indicacaos_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/edit.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/servico.rb",
 		"/home/edsonlima/projetos/mrhindicacao/Gemfile",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/edit.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130929131857_add_column_concluida_to_indicacoes.rb",
@@ -385,7 +418,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/production.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/setors/index.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/_form.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/controllers/servicos_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/locales/devise.en.yml",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/_form.html.erb",
@@ -493,6 +525,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cliente",
 			"enviar",
 			"Search",
 			"sInfoFiltered",
@@ -571,7 +604,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -579,15 +612,15 @@
 					"file": "app/views/relatorios/indicacoes.html.erb",
 					"settings":
 					{
-						"buffer_size": 1455,
+						"buffer_size": 1495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								769,
-								769
+								508,
+								508
 							]
 						],
 						"settings":
@@ -596,13 +629,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "mrhindicacao.sublime-project",
+					"settings":
+					{
+						"buffer_size": 81,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "app/controllers/indicacaos_controller.rb",
 					"settings":
 					{
@@ -613,8 +672,8 @@
 						"selection":
 						[
 							[
-								1468,
-								1468
+								2976,
+								2976
 							]
 						],
 						"settings":
@@ -630,7 +689,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/views/indicacaos/_form.html.erb",
 					"settings":
 					{
@@ -641,8 +700,8 @@
 						"selection":
 						[
 							[
-								2046,
-								2046
+								2119,
+								2119
 							]
 						],
 						"settings":
@@ -652,13 +711,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 459.0,
+						"translation.y": 374.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "app/views/layouts/_navigation.html.erb",
 					"settings":
 					{
@@ -686,50 +745,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "app/models/cliente.rb",
 					"settings":
 					{
-						"buffer_size": 448,
+						"buffer_size": 245,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								163,
+								163
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/models/servico.rb",
-					"settings":
-					{
-						"buffer_size": 214,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -756,6 +791,118 @@
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/clientes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2291,
+								2291
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1114.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/indicacaos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								787,
+								787
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/mailers/email.rb",
+					"settings":
+					{
+						"buffer_size": 484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "config/environments/development.rb",
+					"settings":
+					{
+						"buffer_size": 2127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -811,6 +958,34 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"envio",
+				"config/environments/development.rb"
+			],
+			[
+				"mail",
+				"app/mailers/email.rb"
+			],
+			[
+				"email",
+				"app/mailers/email.rb"
+			],
+			[
+				"indicacaos/_",
+				"app/views/indicacaos/_form.html.erb"
+			],
+			[
+				"indicacaos/in",
+				"app/views/indicacaos/index.html.erb"
+			],
+			[
+				"ser",
+				"app/controllers/servicos_controller.rb"
+			],
+			[
+				"clienet",
+				"app/controllers/clientes_controller.rb"
+			],
 			[
 				"indicacao",
 				"app/models/indicacao.rb"
@@ -876,10 +1051,6 @@
 				"app/views/indicacaos/show.html.erb"
 			],
 			[
-				"email",
-				"app/views/email/nova_indicacao.html.erb"
-			],
-			[
 				"indicacoes",
 				"app/views/relatorios/indicacoes_filtro.html.erb"
 			],
@@ -902,10 +1073,6 @@
 			[
 				"indicacaos",
 				"app/controllers/indicacaos_controller.rb"
-			],
-			[
-				"indicacaos/in",
-				"app/views/indicacaos/index.html.erb"
 			],
 			[
 				"clientes",
@@ -994,10 +1161,6 @@
 			[
 				"produ",
 				"config/environments/production.rb"
-			],
-			[
-				"mail",
-				"app/mailers/email.rb"
 			],
 			[
 				"productio",
@@ -1094,10 +1257,6 @@
 			[
 				"develop",
 				"config/environments/development.rb"
-			],
-			[
-				"indicacaos/_",
-				"app/views/indicacaos/_form.html.erb"
 			],
 			[
 				"cliente.rb",
@@ -1310,18 +1469,6 @@
 			[
 				"questionarios",
 				"lib/questionarios_module.rb"
-			],
-			[
-				"auditor",
-				"app/models/auditoria.rb"
-			],
-			[
-				"auditorias/in",
-				"app/views/auditorias/index.html.erb"
-			],
-			[
-				"deplo",
-				"config/deploy.rb"
 			]
 		],
 		"width": 0.0

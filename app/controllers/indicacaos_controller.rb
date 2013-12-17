@@ -3,7 +3,12 @@ class IndicacaosController < ApplicationController
   # GET /indicacaos
   # GET /indicacaos.json
   def index
-    @indicacaos = Indicacao.find(:all, :conditions => ["concluida IS NOT TRUE AND cancelado IS NOT TRUE"])
+    if current_user.role.descricao == 'administrador'
+      @indicacaos = Indicacao.find(:all, :conditions => ["concluida IS NOT TRUE AND cancelado IS NOT TRUE"])
+    else
+      @indicacaos = Indicacao.find(:all, 
+        :conditions => ["user_id = ? AND concluida IS NOT TRUE AND cancelado IS NOT TRUE", current_user.id])
+    end
 
     respond_to do |format|
       format.html # index.html.erb

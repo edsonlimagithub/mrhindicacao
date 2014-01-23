@@ -6,6 +6,7 @@
   <thead>
   <tr>
     <th>Nome</th>
+    <th>CNPJ</th>
     <th>Contato</th>
     <th>Telefone</th>
     <th>inserir</th>
@@ -15,6 +16,7 @@
 <% @clientes.each do |cliente| %>
   <tr>
     <td><%= cliente.nome %></td>
+    <td><%= cliente.cnpj %></td>
     <td><%= cliente.contato %></td>
     <td><%= cliente.telefone %></td>
     <td><input type="button" value='selecionar', onclick="selecionar_cliente(<%= [cliente.id, cliente.nome] %>)" /></td>

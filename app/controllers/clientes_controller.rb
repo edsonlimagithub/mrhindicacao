@@ -41,6 +41,7 @@ class ClientesController < ApplicationController
 
   def create_modal
     cliente = Cliente.new(:nome => params[:nome],
+     :cnpj => params[:cnpj],
      :contato => params[:contato], 
      :telefone => params[:telefone],
      :email => params[:email],

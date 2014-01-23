@@ -239,7 +239,7 @@
 			"file": "app/controllers/indicacaos_controller.rb",
 			"settings":
 			{
-				"buffer_size": 3178,
+				"buffer_size": 3402,
 				"line_ending": "Unix"
 			}
 		},
@@ -255,7 +255,7 @@
 			"file": "app/views/layouts/_navigation.html.erb",
 			"settings":
 			{
-				"buffer_size": 2211,
+				"buffer_size": 2128,
 				"line_ending": "Unix"
 			}
 		},
@@ -287,23 +287,7 @@
 			"file": "app/views/indicacaos/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1633,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/mailers/email.rb",
-			"settings":
-			{
-				"buffer_size": 484,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/environments/development.rb",
-			"settings":
-			{
-				"buffer_size": 2127,
+				"buffer_size": 1758,
 				"line_ending": "Unix"
 			}
 		}
@@ -380,6 +364,8 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/config/environments/development.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/mailers/email.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/servicos_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/servico.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/clientes_controller.rb",
@@ -412,8 +398,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/edit.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130929131857_add_column_concluida_to_indicacoes.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/config/environments/development.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/mailers/email.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/email/indicacao.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/production.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/setors/index.html.erb",
@@ -525,6 +509,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"user",
 			"cliente",
 			"enviar",
 			"Search",
@@ -604,7 +589,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -629,7 +614,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 255.0,
+						"translation.y": 260.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -665,15 +650,15 @@
 					"file": "app/controllers/indicacaos_controller.rb",
 					"settings":
 					{
-						"buffer_size": 3178,
+						"buffer_size": 3402,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2976,
-								2976
+								298,
+								298
 							]
 						],
 						"settings":
@@ -683,7 +668,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1326.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -721,15 +706,15 @@
 					"file": "app/views/layouts/_navigation.html.erb",
 					"settings":
 					{
-						"buffer_size": 2211,
+						"buffer_size": 2128,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								1916,
+								1916
 							]
 						],
 						"settings":
@@ -739,7 +724,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 413.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -821,7 +806,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1114.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -831,76 +816,20 @@
 					"file": "app/views/indicacaos/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 1633,
+						"buffer_size": 1758,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								787,
-								787
+								721,
+								721
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/mailers/email.rb",
-					"settings":
-					{
-						"buffer_size": 484,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "config/environments/development.rb",
-					"settings":
-					{
-						"buffer_size": 2127,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -959,6 +888,18 @@
 		"selected_items":
 		[
 			[
+				"indicacaos/in",
+				"app/views/indicacaos/index.html.erb"
+			],
+			[
+				"indica",
+				"app/controllers/indicacaos_controller.rb"
+			],
+			[
+				"nave",
+				"app/views/layouts/_navigation.html.erb"
+			],
+			[
 				"envio",
 				"config/environments/development.rb"
 			],
@@ -973,10 +914,6 @@
 			[
 				"indicacaos/_",
 				"app/views/indicacaos/_form.html.erb"
-			],
-			[
-				"indicacaos/in",
-				"app/views/indicacaos/index.html.erb"
 			],
 			[
 				"ser",
@@ -995,20 +932,12 @@
 				"app/controllers/clientes_controller.rb"
 			],
 			[
-				"indica",
-				"app/models/indicacao.rb"
-			],
-			[
 				"servi",
 				"app/models/servico.rb"
 			],
 			[
 				"cliente",
 				"app/models/cliente.rb"
-			],
-			[
-				"nave",
-				"app/views/layouts/_navigation.html.erb"
 			],
 			[
 				"indicacaos/",

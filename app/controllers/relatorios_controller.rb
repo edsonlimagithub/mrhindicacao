@@ -43,7 +43,7 @@ class RelatoriosController < ApplicationController
 			titulos = ["data", "cliente", "indicador", "servico", "situacao"]
 			csv << titulos
 			indicacoes.each do |indicacao|
-				data      = indicacao.data
+				data      = indicacao.created_at.strftime("%d/%m/%Y")
 				cliente   = indicacao.cliente.nome
 				indicador = indicacao.user.nome
 				servico   = indicacao.servico.descricao

@@ -263,7 +263,7 @@
 			"file": "app/models/cliente.rb",
 			"settings":
 			{
-				"buffer_size": 245,
+				"buffer_size": 386,
 				"line_ending": "Unix"
 			}
 		},
@@ -276,18 +276,18 @@
 			}
 		},
 		{
-			"file": "app/controllers/clientes_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2497,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/indicacaos/index.html.erb",
 			"settings":
 			{
 				"buffer_size": 1758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/clientes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2526,
 				"line_ending": "Unix"
 			}
 		}
@@ -364,17 +364,22 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/novo_modal.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/_form.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/index.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/index_modal.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/app/controllers/clientes_controller.rb",
+		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/new.html.erb",
+		"/home/edsonlima/projetos/mrhindicacao/Gemfile",
+		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20140123225550_add_cnpj_to_clientes.rb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/development.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/mailers/email.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/servicos_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/servico.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/controllers/clientes_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/indicacao.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/relatorios_controller.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/index.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/index.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/index.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/novo_modal.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/layouts/_navigation.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/ability.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes_filtro.html.erb",
@@ -394,7 +399,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/indicacaos_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/edit.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/Gemfile",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/edit.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130929131857_add_column_concluida_to_indicacoes.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes.html.erb",
@@ -417,7 +421,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorio/indicacoes.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/Capfile",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorio/indicacoes_filtro.html.erb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/_form.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/user/edit.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/servicos/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130902235832_add_email_to_servico.rb",
@@ -426,7 +429,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/javascripts/jquery.dataTables.min.js",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/stylesheets/DT_bootstrap.css",
 		"/home/edsonlima/projetos/mrhindicacao/app/models/cliente.rb",
-		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/index_modal.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environment.rb",
 		"/home/edsonlima/projetos/mrhindicacao/test/functional/indicacaos_controller_test.rb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130824151158_add_columns_to_servicos.rb",
@@ -489,9 +491,7 @@
 		"/home/edsonlima/projetos/dsmmanager/config/deploy.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/aparelho_caracteristicas/index.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/analise_statuses/index.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130719125229_add_observacao_to_ativacao_historico_status.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130718142711_rename_status_to_status_dsf_id_to_ativacao_historico_status.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130718134631_add_auditoria_id_to_ativacao_historico_statuses.rb"
+		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130719125229_add_observacao_to_ativacao_historico_status.rb"
 	],
 	"find":
 	{
@@ -589,7 +589,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -734,15 +734,15 @@
 					"file": "app/models/cliente.rb",
 					"settings":
 					{
-						"buffer_size": 245,
+						"buffer_size": 386,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								163,
-								163
+								230,
+								230
 							]
 						],
 						"settings":
@@ -785,34 +785,6 @@
 				},
 				{
 					"buffer": 7,
-					"file": "app/controllers/clientes_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2497,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2291,
-								2291
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "app/views/indicacaos/index.html.erb",
 					"settings":
 					{
@@ -835,6 +807,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/clientes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								731,
+								731
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -887,6 +887,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"clientes",
+				"app/controllers/clientes_controller.rb"
+			],
+			[
+				"clientes/",
+				"app/views/clientes/novo_modal.html.erb"
+			],
+			[
+				"clientes/n",
+				"app/views/clientes/new.html.erb"
+			],
+			[
+				"cliente.rb",
+				"app/models/cliente.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
 			[
 				"indicacaos/in",
 				"app/views/indicacaos/index.html.erb"
@@ -968,10 +988,6 @@
 				"app/views/indicacaos/index.html.erb"
 			],
 			[
-				"clientes/",
-				"app/views/clientes/index.html.erb"
-			],
-			[
 				"abili",
 				"app/models/ability.rb"
 			],
@@ -1004,10 +1020,6 @@
 				"app/controllers/indicacaos_controller.rb"
 			],
 			[
-				"clientes",
-				"app/views/clientes/show.html.erb"
-			],
-			[
 				"servicos/ed",
 				"app/views/servicos/edit.html.erb"
 			],
@@ -1018,10 +1030,6 @@
 			[
 				"indicacao/",
 				"app/views/indicacaos/_form.html.erb"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"app",
@@ -1186,10 +1194,6 @@
 			[
 				"develop",
 				"config/environments/development.rb"
-			],
-			[
-				"cliente.rb",
-				"app/models/cliente.rb"
 			],
 			[
 				"servicos/fo",
@@ -1394,10 +1398,6 @@
 			[
 				"questionarios/index",
 				"app/views/questionarios/index.html.erb"
-			],
-			[
-				"questionarios",
-				"lib/questionarios_module.rb"
 			]
 		],
 		"width": 0.0

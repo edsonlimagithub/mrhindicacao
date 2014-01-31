@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  clinte_id: 1
+  nome: MyString
+  fone: MyString
+
+two:
+  clinte_id: 1
+  nome: MyString
+  fone: MyString

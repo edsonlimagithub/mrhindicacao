@@ -20,8 +20,12 @@
     <%= f.text_field :cnpj %>
   </div>
   <div class="field">
-    <%= f.label :contato %><br />
-    <%= f.text_field :contato %>
+    Contato<input type='button' value='Novo' onclick='adicionaContato();'><br />
+      <% @cliente.contato_clientes.each do |cc| %>
+        <%= cc.nome %> : <%= cc.fone %>
+      <% end %>
+    <div id="novo_contato">
+    </div>
   </div>
   <div class="field">
     <%= f.label :telefone %><br />
@@ -32,10 +36,22 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
+    Contato:
     <%= f.label :observacao %><br />
-    <%= f.text_area :observacao %>
+    <%= f.text_area :observacao, :size => "30x10" %>
   </div>
+ 
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+<script type='text/javascript'>
+
+var contato = 1;
+var adicionaContato = function(){
+  $('#novo_contato').html($('#novo_contato').html() + "<input type='text' name='contato["+ contato +"][nome]'> : <input type='text' name='contato["+ contato +"][fone]'></br>");
+  contato++;
+}
+
+</script>

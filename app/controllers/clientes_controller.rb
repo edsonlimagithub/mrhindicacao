@@ -27,7 +27,6 @@ class ClientesController < ApplicationController
   # GET /clientes/new.json
   def new
     @cliente = Cliente.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @cliente }
@@ -63,6 +62,17 @@ class ClientesController < ApplicationController
 
     respond_to do |format|
       if @cliente.save
+
+        params[:contato].each do |i, contato|
+          if !contato[:nome].blank? and !contato[:fone].blank?
+            contatoCliente = ContatoCliente.new
+            contatoCliente.cliente_id = @cliente.id
+            contatoCliente.nome       = contato[:nome]
+            contatoCliente.fone      = contato[:fone]
+            contatoCliente.save 
+          end
+        end
+
         format.html { redirect_to @cliente, notice: 'Cliente was successfully created.' }
         format.json { render json: @cliente, status: :created, location: @cliente }
       else

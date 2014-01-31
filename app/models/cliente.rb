@@ -2,7 +2,8 @@
 class Cliente < ActiveRecord::Base
   attr_accessible :contato, :email, :nome, :observacao, :telefone, :cnpj
 
-  has_many :indicacaos, :dependent => :restrict
+  has_many :indicacaos,       :dependent => :restrict
+  has_many :contato_clientes, :dependent => :restrict
 
   validates :cnpj, :uniqueness => {:message => "JÁ EXISTE"}
   validates :cnpj, :presence => {:message => "NÃO PODE ESTAR EM BRANCO"}

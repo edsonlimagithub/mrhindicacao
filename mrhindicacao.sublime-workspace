@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"contato",
+				"contatoCliente"
+			],
+			[
 				"cliente",
 				"cliente_id"
 			],
@@ -220,29 +224,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/cliente.rb",
-			"settings":
-			{
-				"buffer_size": 446,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/controllers/clientes_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2525,
+				"buffer_size": 2904,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<%= form_for(@cliente) do |f| %>\n  <% if @cliente.errors.any? %>\n    <div id=\"error_explanation\">\n      <h2><%= pluralize(@cliente.errors.count, \"error\") %> prohibited this cliente from being saved:</h2>\n\n      <ul>\n      <% @cliente.errors.full_messages.each do |msg| %>\n        <li><%= msg %></li>\n      <% end %>\n      </ul>\n    </div>\n  <% end %>\n\n  <div class=\"field\">\n    <%= f.label :nome %><br />\n    <%= f.text_field :nome %>\n  </div>\n  <div class=\"field\">\n    <%= f.label :cnpj %><br />\n    <%= f.text_field :cnpj %>\n  </div>\n  <div class=\"field\">\n    Contato<input type='button' value='Novo' onclick='adicionaContato();'><br />\n    <div id='contatos'>\n      <% @cliente.contato_clientes.each do |cc| %>\n        <%= cc.nome %> : <%= cc.fone %>\n      <% end %>\n    <div>\n  </div>\n  <div class=\"field\">\n    <%= f.label :telefone %><br />\n    <%= f.text_field :telefone %>\n  </div>\n  <div class=\"field\">\n    <%= f.label :email %><br />\n    <%= f.text_field :email %>\n  </div>\n  <div class=\"field\">\n    Contato:\n    <%= f.label :observacao %><br />\n    <%= f.text_area :observacao, :size => \"30x10\" %>\n  </div>\n \n  <div class=\"actions\">\n    <%= f.submit %>\n  </div>\n<% end %>\n\n<script type='text/javascript'>\n\nvar adicionaContato = function(){\n  alert($('#contatos').html());+\n}\n</script>\n",
 			"file": "app/views/clientes/_form.html.erb",
-			"file_size": 1294,
-			"file_write_time": 1391047856000000,
 			"settings":
 			{
-				"buffer_size": 1295,
+				"buffer_size": 1475,
 				"line_ending": "Unix"
 			}
 		},
@@ -267,6 +260,14 @@
 			"settings":
 			{
 				"buffer_size": 82,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/clientes/novo_modal.html.erb",
+			"settings":
+			{
+				"buffer_size": 1680,
 				"line_ending": "Unix"
 			}
 		}
@@ -343,6 +344,7 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/app/models/cliente.rb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20140130000932_create_contato_clientes.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/controllers/relatorios_controller.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/indicacaos/index.html.erb",
@@ -409,7 +411,6 @@
 		"/home/edsonlima/projetos/mrhindicacao/app/views/setors/new.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/javascripts/jquery.dataTables.min.js",
 		"/home/edsonlima/projetos/mrhindicacao/app/assets/stylesheets/DT_bootstrap.css",
-		"/home/edsonlima/projetos/mrhindicacao/app/models/cliente.rb",
 		"/home/edsonlima/projetos/mrhindicacao/config/environment.rb",
 		"/home/edsonlima/projetos/mrhindicacao/test/functional/indicacaos_controller_test.rb",
 		"/home/edsonlima/projetos/mrhindicacao/db/migrate/20130824151158_add_columns_to_servicos.rb",
@@ -568,23 +569,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/cliente.rb",
+					"file": "app/controllers/clientes_controller.rb",
 					"settings":
 					{
-						"buffer_size": 446,
+						"buffer_size": 2904,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								202,
-								202
+								2332,
+								2332
 							]
 						],
 						"settings":
@@ -594,53 +595,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 451.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/clientes_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2525,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								568,
-								568
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 408.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/views/clientes/_form.html.erb",
 					"settings":
 					{
-						"buffer_size": 1295,
+						"buffer_size": 1475,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1116,
-								1116
+								414,
+								414
 							]
 						],
 						"settings":
@@ -650,13 +623,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 332.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/models/contato_cliente.rb",
 					"settings":
 					{
@@ -682,7 +655,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "app/views/clientes/edit.html.erb",
 					"settings":
 					{
@@ -708,7 +681,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "app/views/clientes/new.html.erb",
 					"settings":
 					{
@@ -726,6 +699,34 @@
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/clientes/novo_modal.html.erb",
+					"settings":
+					{
+						"buffer_size": 1680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -781,6 +782,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"novo",
+				"app/views/clientes/novo_modal.html.erb"
+			],
 			[
 				"clientes/new",
 				"app/views/clientes/new.html.erb"
@@ -1288,10 +1293,6 @@
 			[
 				"filtro_a",
 				"app/models/filtro_campo.rb"
-			],
-			[
-				"filtro.rb",
-				"app/models/filtro.rb"
 			]
 		],
 		"width": 0.0

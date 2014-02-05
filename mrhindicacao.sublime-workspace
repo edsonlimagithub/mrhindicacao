@@ -235,7 +235,7 @@
 			"file": "app/views/clientes/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 1475,
+				"buffer_size": 1586,
 				"line_ending": "Unix"
 			}
 		},
@@ -605,15 +605,15 @@
 					"file": "app/views/clientes/_form.html.erb",
 					"settings":
 					{
-						"buffer_size": 1475,
+						"buffer_size": 1586,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								414,
-								414
+								622,
+								622
 							]
 						],
 						"settings":
@@ -623,7 +623,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 255.0,
+						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -718,8 +718,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								670,
+								670
 							]
 						],
 						"settings":

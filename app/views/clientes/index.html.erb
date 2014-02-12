@@ -19,7 +19,7 @@
 <% @clientes.each do |cliente| %>
   <tr>
     <td><%= cliente.nome %></td>
-    <td><%= cliente.cnpj ? cliente.cnpj : "" %></td>
+    <td><%= cliente.cnpj %></td>
     <td><%= cliente.contato %></td>
     <td><%= cliente.telefone %></td>
     <td><%= cliente.email %></td>

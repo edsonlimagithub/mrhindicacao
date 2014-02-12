@@ -7,6 +7,7 @@
     <thead>
     <tr>
       <th><i class="icon-share-alt"></i></th>
+      <th>Emails</th>
       <th>Data</th>
       <th>Dias</th>
       <th>Usuario</th>
@@ -22,6 +23,7 @@
   <% @indicacaos.each do |indicacao| %>
     <tr>
       <td><%= (current_user.role.descricao == 'administrador') ? (check_box_tag "indicacoes[#{indicacao.id}]") : "" %></td>
+      <td><%= indicacao.email_enviado %></td>
       <td><%= indicacao.created_at.strftime("%d/%m/%Y") %></td>
       <td><%= dias_corridos indicacao %></td>
       <td><%= indicacao.user.nome %></td>

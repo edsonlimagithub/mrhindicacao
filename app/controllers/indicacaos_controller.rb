@@ -115,6 +115,8 @@ class IndicacaosController < ApplicationController
     params[:indicacoes].each do |i, index|
       indicacao = Indicacao.find(i)
       Email.indicacao(indicacao.servico.email, indicacao).deliver
+      indicacao.email_enviado = indicacao.email_enviado.to_i + 1
+      indicacao.save
     end
     render :index
   end

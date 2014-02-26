@@ -59,20 +59,17 @@ class ClientesController < ApplicationController
   # POST /clientes.json
   def create
     @cliente = Cliente.new(params[:cliente])
-
     respond_to do |format|
       if @cliente.save
-
-        params[:contato].each do |i, contato|
-          if !contato[:nome].blank? and !contato[:fone].blank?
-            contatoCliente = ContatoCliente.new
+        if params[:contato]
+          params[:contato].each do |i, contato|
+            contatoCliente            = ContatoCliente.new
             contatoCliente.cliente_id = @cliente.id
             contatoCliente.nome       = contato[:nome]
-            contatoCliente.fone      = contato[:fone]
+            contatoCliente.fone       = contato[:fone]
             contatoCliente.save 
           end
         end
-
         format.html { redirect_to @cliente, notice: 'Cliente was successfully created.' }
         format.json { render json: @cliente, status: :created, location: @cliente }
       else

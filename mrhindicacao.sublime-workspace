@@ -247,7 +247,18 @@
 			"file": "app/views/clientes/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1327,
+				"buffer_size": 1323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<h3>Indicações</h3>\n<%= form_tag '/indicacao/enviar_email', :method => 'post' do %>\n<% if current_user.role.descricao == 'administrador' %>\n  <%= submit_tag 'Enviar email'%>\n<% end %>\n  <table id=\"indicacoes_tab\" class=\"table table-striped table-bordered\">\n      <thead>\n      <tr>\n        <th><i class=\"icon-share-alt\"></i></th>\n        <th>Emails</th>\n        <th>Data</th>\n        <th>Dias</th>\n        <th>Usuario</th>\n        <th>Cliente</th>\n        <th>Servico</th>\n        <th>Detalhes</th>\n        <th>Exibir</th>\n        <th>Editar</th>\n        <th>Apagar</th>\n      </tr>\n      </thead>\n    <tbody>\n    <% @indicacaos.each do |indicacao| %>\n      <tr>\n        <td><%= (current_user.role.descricao == 'administrador') ? (check_box_tag \"indicacoes[#{indicacao.id}]\") : \"\" %></td>\n        <td><%= indicacao.email_enviado %></td>\n        <td><%= indicacao.created_at.strftime(\"%d/%m/%Y\") %></td>\n        <td><%= dias_corridos indicacao %></td>\n        <td><%= indicacao.user.nome %></td>\n        <td><%= indicacao.cliente ? indicacao.cliente.nome : 'vazio'%></td>\n        <td><%= indicacao.servico.descricao %></td>\n        <td><%= indicacao.detalhes %></td>\n        <td><%= link_to 'Show', indicacao %></td>\n        <td><%= link_to 'Edit', edit_indicacao_path(indicacao) %></td>\n        <td><%= link_to 'Destroy', indicacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>\n      </tr>\n    <% end %>\n    </tbody>\n  </table>\n<% end %>\n<br />\n\n<script type=\"text/javascript\">\n  $(document).ready(function(){\n    $('#indicacoes_tab').dataTable({\n       \"oLanguage\": {\n      \"sLengthMenu\": \"_MENU_ registros por página\",\n      \"sZeroRecords\": \"Nenhum registro\",\n      \"sInfo\": \"Exibindo _START_ de _END_ total _TOTAL_ registros\",\n      \"sInfoEmpty\": \"Exibindo 0 de 0 de 0 registros\",\n      \"sInfoFiltered\": \"(filtered from _MAX_ total records)\"\n    }\n    });\n  });\n\n</script>",
+			"file": "app/views/indicacaos/index.html.erb",
+			"file_size": 1829,
+			"file_write_time": 1392168897000000,
+			"settings":
+			{
+				"buffer_size": 1890,
 				"line_ending": "Unix"
 			}
 		},
@@ -566,6 +577,7 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -629,15 +641,43 @@
 					"file": "app/views/clientes/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 1327,
+						"buffer_size": 1323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								863,
+								863
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 211.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/indicacaos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								183,
+								183
 							]
 						],
 						"settings":
@@ -653,7 +693,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "app/views/clientes/edit.html.erb",
 					"settings":
 					{
@@ -679,7 +719,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "app/controllers/roles_controller.rb",
 					"settings":
 					{
@@ -755,12 +795,16 @@
 		"selected_items":
 		[
 			[
-				"clientes/",
-				"app/views/clientes/edit.html.erb"
+				"indicacaos/",
+				"app/views/indicacaos/index.html.erb"
 			],
 			[
 				"clientes/in",
 				"app/views/clientes/index.html.erb"
+			],
+			[
+				"clientes/",
+				"app/views/clientes/edit.html.erb"
 			],
 			[
 				"produt",
@@ -861,10 +905,6 @@
 			[
 				"servi",
 				"app/models/servico.rb"
-			],
-			[
-				"indicacaos/",
-				"app/views/indicacaos/_form.html.erb"
 			],
 			[
 				"modal",

@@ -5,8 +5,8 @@ class Cliente < ActiveRecord::Base
   has_many :indicacaos,       :dependent => :restrict
   has_many :contato_clientes, :dependent => :restrict
 
-  validates :cnpj, :uniqueness => {:message => "JÁ EXISTE"}
-  validates :cnpj, :presence => {:message => "NÃO PODE ESTAR EM BRANCO"}
+  #validates :cnpj, :uniqueness => {:message => "JÁ EXISTE"}
+  #validates :cnpj, :presence => {:message => "NÃO PODE ESTAR EM BRANCO"}
   validates :nome, :presence => {:message => "NÃO PODE ESTAR EM BRANCO"}
   
 end

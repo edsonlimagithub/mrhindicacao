@@ -120,4 +120,8 @@ class IndicacaosController < ApplicationController
     end
     render :index
   end
+
+  def finalizadas
+    @indicacaos = Indicacao.find(:all, :conditions => ["concluida IS TRUE AND cancelado IS NOT TRUE"])
+  end
 end

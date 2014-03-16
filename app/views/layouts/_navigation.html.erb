@@ -26,6 +26,9 @@
             <ul class="dropdown-menu">  
                   <li><a href="/indicacaos/new">Indicar</a></li>
                   <li><a href="/indicacaos">Listar</a></li>
+                  <% if current_user.role.descricao == 'administrador' %>
+                    <li><a href="/indicacoes/finalizadas">Finalizadas</a></li>
+                  <% end %>
               </ul>  
           </li>
           <% end %>

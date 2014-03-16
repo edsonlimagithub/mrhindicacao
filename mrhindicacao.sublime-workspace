@@ -252,10 +252,7 @@
 			}
 		},
 		{
-			"contents": "<h3>Indicações</h3>\n<%= form_tag '/indicacao/enviar_email', :method => 'post' do %>\n<% if current_user.role.descricao == 'administrador' %>\n  <%= submit_tag 'Enviar email'%>\n<% end %>\n  <table id=\"indicacoes_tab\" class=\"table table-striped table-bordered\">\n      <thead>\n      <tr>\n        <th><i class=\"icon-share-alt\"></i></th>\n        <th>Emails</th>\n        <th>Data</th>\n        <th>Dias</th>\n        <th>Usuario</th>\n        <th>Cliente</th>\n        <th>Servico</th>\n        <th>Detalhes</th>\n        <th>Exibir</th>\n        <th>Editar</th>\n        <th>Apagar</th>\n      </tr>\n      </thead>\n    <tbody>\n    <% @indicacaos.each do |indicacao| %>\n      <tr>\n        <td><%= (current_user.role.descricao == 'administrador') ? (check_box_tag \"indicacoes[#{indicacao.id}]\") : \"\" %></td>\n        <td><%= indicacao.email_enviado %></td>\n        <td><%= indicacao.created_at.strftime(\"%d/%m/%Y\") %></td>\n        <td><%= dias_corridos indicacao %></td>\n        <td><%= indicacao.user.nome %></td>\n        <td><%= indicacao.cliente ? indicacao.cliente.nome : 'vazio'%></td>\n        <td><%= indicacao.servico.descricao %></td>\n        <td><%= indicacao.detalhes %></td>\n        <td><%= link_to 'Show', indicacao %></td>\n        <td><%= link_to 'Edit', edit_indicacao_path(indicacao) %></td>\n        <td><%= link_to 'Destroy', indicacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>\n      </tr>\n    <% end %>\n    </tbody>\n  </table>\n<% end %>\n<br />\n\n<script type=\"text/javascript\">\n  $(document).ready(function(){\n    $('#indicacoes_tab').dataTable({\n       \"oLanguage\": {\n      \"sLengthMenu\": \"_MENU_ registros por página\",\n      \"sZeroRecords\": \"Nenhum registro\",\n      \"sInfo\": \"Exibindo _START_ de _END_ total _TOTAL_ registros\",\n      \"sInfoEmpty\": \"Exibindo 0 de 0 de 0 registros\",\n      \"sInfoFiltered\": \"(filtered from _MAX_ total records)\"\n    }\n    });\n  });\n\n</script>",
 			"file": "app/views/indicacaos/index.html.erb",
-			"file_size": 1829,
-			"file_write_time": 1392168897000000,
 			"settings":
 			{
 				"buffer_size": 1890,
@@ -275,6 +272,46 @@
 			"settings":
 			{
 				"buffer_size": 1882,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/cliente.rb",
+			"settings":
+			{
+				"buffer_size": 448,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/database.yml",
+			"settings":
+			{
+				"buffer_size": 342,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/deploy.rb",
+			"settings":
+			{
+				"buffer_size": 1241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 924,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/environments/production.rb",
+			"settings":
+			{
+				"buffer_size": 2806,
 				"line_ending": "Unix"
 			}
 		}
@@ -351,6 +388,7 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/mrhindicacao/.gitignore",
 		"/home/edsonlima/projetos/mrhindicacao/config/environments/production.rb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/clientes/_form.html.erb",
 		"/home/edsonlima/projetos/mrhindicacao/app/views/relatorios/indicacoes_filtro.html.erb",
@@ -477,8 +515,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/views/questionarios/index.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/layouts/filtros.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/models/filtro_campo.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/filtro.rb",
-		"/home/edsonlima/projetos/dsmmanager/lib/questionarios_module.rb"
+		"/home/edsonlima/projetos/dsmmanager/app/models/filtro.rb"
 	],
 	"find":
 	{
@@ -577,7 +614,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -648,8 +685,8 @@
 						"selection":
 						[
 							[
-								863,
-								863
+								411,
+								411
 							]
 						],
 						"settings":
@@ -659,7 +696,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 211.0,
+						"translation.y": 139.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -745,6 +782,140 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/cliente.rb",
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "config/database.yml",
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "config/deploy.rb",
+					"settings":
+					{
+						"buffer_size": 1241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1241,
+								1241
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "config/environments/production.rb",
+					"settings":
+					{
+						"buffer_size": 2806,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -795,6 +966,30 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"deplo",
+				"config/deploy.rb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"cliente",
+				"app/models/cliente.rb"
+			],
+			[
 				"indicacaos/",
 				"app/views/indicacaos/index.html.erb"
 			],
@@ -843,10 +1038,6 @@
 				"app/models/contato_cliente.rb"
 			],
 			[
-				"cliente",
-				"app/models/cliente.rb"
-			],
-			[
 				"relatorio",
 				"app/controllers/relatorios_controller.rb"
 			],
@@ -861,10 +1052,6 @@
 			[
 				"cliente.rb",
 				"app/models/cliente.rb"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"nave",
@@ -1087,10 +1274,6 @@
 				"config/environments/development.rb"
 			],
 			[
-				"data",
-				"app/assets/javascripts/jquery.dataTables.min.js"
-			],
-			[
 				"setors/",
 				"app/views/setors/index.html.erb"
 			],
@@ -1293,18 +1476,6 @@
 			[
 				"status",
 				"app/models/status_dsf.rb"
-			],
-			[
-				"ativacaos",
-				"app/controllers/ativacaos_controller.rb"
-			],
-			[
-				"ativacao",
-				"app/models/ativacao_auditada.rb"
-			],
-			[
-				"filtros_c",
-				"app/controllers/filtros_controller.rb"
 			]
 		],
 		"width": 0.0

@@ -33,6 +33,8 @@ Mrhindicacao::Application.routes.draw do
   match '/relatorio/indicacoes_filtro' => 'relatorios#indicacoes_filtro'
   #relatório de indicações
   match 'relatorio/indicacoes' => 'relatorios#indicacoes'
+  #exibir indicacoes fianlizadas
+  match 'indicacoes/finalizadas' => 'indicacaos#finalizadas'
 
   
 end

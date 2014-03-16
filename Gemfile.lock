@@ -153,7 +153,6 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.6)
-  rake (= 10.1.0)
   roadie
   sass-rails (~> 3.2.3)
   therubyracer

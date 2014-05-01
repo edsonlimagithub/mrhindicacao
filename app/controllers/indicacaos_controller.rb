@@ -64,6 +64,7 @@ class IndicacaosController < ApplicationController
     respond_to do |format|
       if @indicacao.save
         if params[:enviar_email]
+          Email.nova_indicacao('visitas@mrhgestao.com.br', @indicacao).deliver
           Email.nova_indicacao(@indicacao.servico.email, @indicacao).deliver
         end
         format.html { redirect_to @indicacao, notice: 'Indicacao criada com sucesso.' }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4258007468">
+    <data-source source="LOCAL" name="Rails mrhindicacao: development" uuid="529c265a-9d9e-4e0c-ae18-b233325059c1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/mrhindicacao_development</jdbc-url>
+      <user-name>mrhindicacao</user-name>
+      <user-password>dfc7dfd8dfc2dfc3dfc4dfcedfc3dfc9dfcbdfc9dfcbdfc5</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails mrhindicacao: production" uuid="f542c31f-9ee6-4934-a99c-ff74351eea37">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/mrhindicacao_production</jdbc-url>
+      <user-name>mrhindicacao</user-name>
+      <user-password>dfc7dfd8dfc2dfc3dfc4dfcedfc3dfc9dfcbdfc9dfcbdfc5</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

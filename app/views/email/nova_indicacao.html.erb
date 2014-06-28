@@ -21,7 +21,9 @@
 	</tr>
 	<tr>
 		<th>Contato</th>
-		<td><%= @indicacao.cliente.contato %></td>
+		<% @indicacao.cliente.contato_clientes.each do |contato|%>
+            <td><%= "Nome: #{contato.nome} Fone: #{contato.fone}" %></td>
+        <% end %>
 	</tr>
 	<tr>
 		<th>Telefone</th>

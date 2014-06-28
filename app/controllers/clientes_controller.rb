@@ -86,6 +86,17 @@ class ClientesController < ApplicationController
 
     respond_to do |format|
       if @cliente.update_attributes(params[:cliente])
+        @cliente.contato_clientes.destroy
+
+        if params[:contato]
+          params[:contato].each do |i, contato|
+            contatoCliente            = ContatoCliente.new
+            contatoCliente.cliente_id = @cliente.id
+            contatoCliente.nome       = contato[:nome]
+            contatoCliente.fone       = contato[:fone]
+            contatoCliente.save
+          end
+        end
         format.html { redirect_to @cliente, notice: 'Cliente was successfully updated.' }
         format.json { head :no_content }
       else
